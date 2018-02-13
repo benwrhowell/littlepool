@@ -1,0 +1,114 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Rehearse';  
+
+
+block prepend body
+  
+  include includes/rehearse-head
+       
+  
+  .container.main-wrap  
+    .columns.is-multiline
+      .column.is-12
+        p.title.is-1.page-title REHEARSE
+        .content
+          p.is-size-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          p.is-size-5 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+          hr
+      
+      
+      .column
+        
+        
+        .box.txt-center
+          p.title.is-3 Isolated rehearsal spaces for bands and artists in the center of Brighton, just 2 min walk from Churchill Square.
+          hr
+          .slogan
+            p.title.is-2.accent1 +VINTAGE AMPS
+            p.title.is-2.accent2 +FRIENDLY STAFF
+            p.title.is-2.accent3 +GOOD COFFEE
+            p.title.is-2.accent4 +ARCADE GAMES
+      .column.is-narrow
+      
+        .panel
+          .panel-block.no-flex.txt-center
+            .content
+              p.title.is-4 OPENING HOURS
+              p 
+                strong Mon-Sat: 
+                | 10am-Midnight
+                br
+                strong Sun: 
+                | 10am-10pm
+              hr
+            
+              P For all bookings:
+              p.title.is-5 
+                span.icon
+                  i.icon-phone-outline
+                span  01273 123 4567
+        
+      .column.is-12
+        p.title.accent.orange REHEARSAL ROOMS
+        .columns.is-multiline.is-mobile
+          
+          .column.is-6-mobile.is-4-desktop.is-4-tablet
+            +card-info('Room 1', 'MEDIUM', 'rooms/room1.jpg')
+          .column.is-6-mobile.is-4-desktop.is-4-tablet
+            +card-info('Room 2', 'SMALL', 'rooms/room2.jpg')
+          .column.is-6-mobile.is-4-desktop.is-4-tablet
+            +card-info('Room 3', 'SMALL', 'rooms/room3.jpg')
+          .column.is-6-mobile.is-4-desktop.is-4-tablet
+            +card-info('Room 4', 'LARGE', 'rooms/room4.jpg')
+          .column.is-6-mobile.is-4-desktop.is-4-tablet
+            +card-info('Room 5', 'SMALL', 'rooms/room5.jpg')
+          .column.is-6-mobile.is-4-desktop.is-4-tablet
+            +card-info('Room 6', 'LARGE', 'rooms/room6.jpg')
+      
+      .column.is-6
+        .panel
+          .panel-block.title.is-4
+            span.panel-icon
+              img(src="media/icons/pedal.png")
+            | RENT CUSTOM GUITAR PEDALS
+          
+          .panel-block.no-flex.txt-center
+            .content
+              p.title.is-5
+                strong Handbuilt by local ledgend Roland drummond
+          
+              p Fuzz / Sustain / Bass green / Treble boost / ODDF1-1 overdrive / Harmonic percolator / Bass boost + more
+              hr
+              p
+                strong Ask at reception
+                |   for more details...
+      .column.is-6
+        .panel
+          .panel-block.title.is-4
+            span.panel-icon
+              img(src="media/icons/mpc.png")
+            | GUITAR SET-UP & REPAIRS
+          
+          .panel-block.no-flex.txt-center
+            .content
+              p.title.is-5
+                strong We highly reccomend and trust our friend Pedro Martins for all your guitar repair and setup needs
+              
+              p Contact Pedro:
+            
+              p 
+                strong 01273 381044
+                br
+                strong 07799563874  
+              hr
+              p
+                strong Ask at reception
+                |   for more details...      
+                
+  
+  
+  hr
+  include includes/rehearse-foot

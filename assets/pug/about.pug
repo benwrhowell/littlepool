@@ -1,0 +1,45 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'About';  
+
+
+block prepend body
+  
+  include includes/rehearse-head
+       
+  
+  .container.main-wrap  
+    .columns.is-multiline
+      .column.is-12
+        p.title.is-1.page-title ABOUT US
+        hr
+
+      .column.is-4
+      
+        p At Small Pond we have dedicated the past few years of our existence to building a platform for up-and-coming artists and bands. We are a small team of multi-disciplined music fans and professionals who love music, and like to work with others who love it too.
+        br
+        p Since the start of Small Pond, we have released records, hosted live events, recorded artists, filmed live sessions, promoted great bands, worked with some incredible people, played some of our own music and even built our own studio & rehearsal space – and we are just getting started.
+      .column.is-8
+        +title-accent('MEET THE TEAM', 'purple')
+        .columns.is-multiline.is-mobile
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('Liam', '/team/liam.jpg')
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('Joe', '/team/joe.jpg')
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('Dave', '/team/dave.jpg')
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('Sam', '/team/sam.jpg')
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('Vlad', '/team/vlad.jpg')
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('George', '/team/george.jpg')
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('Sam', '/team/sam_b.jpg')
+          .column.is-3-tablet.is-3-desktop.is-6-mobile
+            +card-info-simple('Hebe', '/team/hebe.jpg')
+        
+  hr    
+  include includes/rehearse-foot

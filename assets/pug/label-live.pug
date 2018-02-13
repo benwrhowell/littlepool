@@ -1,0 +1,89 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Live';  
+
+
+block prepend body
+  
+  include includes/label-head
+       
+  
+  .container.main-wrap  
+    .columns.is-multiline
+      .column.is-12
+        +breadcrumbs(['Small Pond', 'Live'], 'Upcoming')
+        
+      .column
+        .banner-simple
+          .banner-content
+            
+            p.title.is-1 BADPOND Festival
+            p.subtitle.is-3 TTNG, Delta Sleep, The Physics House Band, suffer Like G Did, CLT DRP, InTechnicolor, Wild Cat Strike + More!
+            a.button.is-success 
+              span.icon
+                i.icon-info
+              span Info / Tickets
+    
+        
+    .columns.is-multiline
+      .column
+        .content
+          .buttons
+            a.button(href="/label-bands.php") BUY TICKETS
+            a.button.is-info(href="/label-live.php") 
+              span.icon
+                i.icon-facebook
+              span FACEBOOK EVENTS
+    .columns.is-multiline.is-mobile
+      .column.is-4-tablet.is-4-desktop.is-6-mobile
+        +card-event('TERA MELOS + Tangled Hair & Poly-math','15.3.18 - Green Door Store, Brighton', '$11.00', 'tera.jpg')
+      .column.is-4-tablet.is-4-desktop.is-6-mobile
+        +card-event('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00', 'bad-crop.jpg')
+      .column.is-4-tablet.is-4-desktop.is-6-mobile
+        +card-event('BOY PABLO + Drip Gloss', '28/03/18 - Green Door Store, Brighton', '$8.00', 'boy.jpg')
+      //.column.is-5
+        .main-slide.flyer.box
+          +slide-event-img('tera.jpg')
+          +slide-event-img('bad-crop.jpg')
+          +slide-event-img('boy.jpg')
+          
+        .content
+          
+        
+      
+        
+        
+  //  .columns.is-multiline
+      .column.is-12  
+        
+        p.title Past Events Archive
+      .column.is-2  
+        +card-event-text('VALERIAN SWING', '31/6/17 - Brighton', '$8.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-2  
+        +card-event-text('VALERIAN SWING', '31/6/17 - Brighton', '$8.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-2  
+        +card-event-text('VALERIAN SWING', '31/6/17 - Brighton', '$8.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-2  
+        +card-event-text('VALERIAN SWING', '31/6/17 - Brighton', '$8.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-2    
+        +card-event-text('BADPOND Festival', '27 & 28 APRIL - The Arch, Brighton', '$20.00')
+      .column.is-12
+        a.button View all
+  hr    
+  include includes/rehearse-foot

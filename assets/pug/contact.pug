@@ -1,0 +1,57 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Contact';  
+
+
+block prepend body
+  
+  include includes/rehearse-head
+       
+  
+  .container.main-wrap  
+    .columns.is-multiline
+      .column.is-12
+        p.title.is-1.page-title CONTACT
+        hr
+      .column.is-6
+        .box.txt-center
+          p.title.is-3 OPENING HOURS
+          
+          p 
+            strong Mon-Sat: 
+            | 10am - Midnight
+          p 
+            strong Sun: 
+            | 10am - 10pm
+          br
+          p To enquire about booking studio time or any other recording related activities please get in touch with our team with the details below:
+          hr
+          p 
+            strong Tel | 
+            | 01273 748 193
+          hr
+          p
+            strong Rehearsal / General Enquiries
+          a(href="#") 
+            strong info
+            | @smallpondrec.co.uk
+          p
+            strong Equipment Hire
+          a(href="#") 
+            strong hire
+            | @smallpondrec.co.uk
+          p
+            strong Studio Bookings
+          a(href="#") 
+            strong studio
+            | @smallpondrec.co.uk
+      .column.is-6
+        
+        .box.full-height.map
+        
+          iframe(width='100%', height='100%', frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ99gioxKFdUgRwSldZeUkjQQ&key=AIzaSyBqSIfcQ42OZ1HMWXh0dzFG9JsnG4_hu8k', allowfullscreen='')
+      
+  hr    
+  include includes/rehearse-foot

@@ -1,0 +1,120 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Catalog';  
+
+
+block prepend body
+  
+  include includes/label-head
+       
+  
+  .container.main-wrap.has-newsfeed-alt
+    .columns.is-multiline
+      .column.is-12
+        +breadcrumbs(['Small Pond', 'Label'], 'Catalog')
+      .column
+        .banner-simple(style="background-image: url('/media/banner/wild.jpg');")
+          .banner-content
+            
+            p.title.is-1 Wild Cat Strike
+            p.subtitle.is-3 Horses
+            a.button.is-success 
+              span.icon
+                i.icon-spotify
+              span Stream
+            a.button.is-danger
+              span.icon
+                i.icon-youtube-alt
+              span Watch
+      .column.is-12
+        .content
+          .buttons
+            
+            a.button(href="/label-bands.php") BANDS
+            a.button(href="#") SHOP
+            a.button(href="/label-live.php") UPCOMING EVENTS
+            a.button.is-link(href="/label-live.php") 
+              span.icon
+                i.icon-bandcamp
+              span BANDCAMP
+            
+    .columns.is-multiline.is-mobile     
+      .column.is-12
+        
+        
+        p.title.is-2.page-title MOST RECENT
+      .column.is-6-mobile.is-4-desktop
+        +card-info-overlay('Natalie Evans', 'In Trees', 'product/natalie.jpg')
+      .column.is-6-mobile.is-4-desktop  
+        +card-info-overlay('Wild Cat Strike','Horses', 'banner/wild.jpg')
+      .column.is-6-mobile.is-4-desktop.is-hidden-mobile  
+        +card-info-overlay('Inwards','Amsterdam / Computertalsk','product/inwards.jpg')
+    .columns.is-multiline.is-mobile.is-hidden-mobile     
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('InTechnicolor','Doomer','product/intechnicolor.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('The Physics House Band', 'Mercury Fountain', 'product/physics.jpg')
+      
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Luo','In The Dark','product/luo.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('The Physics House Band', 'Calypso + Slugabed remix', 'product/calypso.jpg')
+    .columns.is-multiline.is-mobile         
+      .column.is-12
+        +title-accent('ALL', 'orange')
+      
+      .column.is-6-mobile.is-3-tablet 
+        +card-info-overlay('Alarmist','Popular Demain','product/alarmist.jpg')
+        
+      .column.is-6-mobile.is-3-tablet
+        +card-info-overlay('Calico', 'Calico', 'product/calico.jpg')    
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('InTechnicolor','Doomer','product/intechnicolor.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('InTechnicolor', 'InTechnicolor', 'product/intechnicolor-a.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Inwards','Amsterdam / Computertalsk','product/inwards.jpg') 
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Luo','Sleep Spindles','product/luo-sleep.jpg')
+      
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Luo','In The Dark','product/luo.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Luo','Ebb & Flow','product/luo-ebb.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Luo','Lucid (Foreign Skin remix)','product/luo-lucid.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Mutiny on the Bounty', 'Digital Tropics', 'product/mutiny.jpg')  
+      
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Natalie Evans', 'In Trees', 'product/natalie.jpg')
+        
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Small Pond Sampler #001', 'Various Artists', 'product/sampler.jpg')  
+         
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('The Physics House Band', 'Mercury Fountain', 'product/physics.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('The Physics House Band', 'Calypso + Slugabed remix', 'product/calypso.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Town Portal', 'The Occident', 'product/town.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Valerian Swing', 'Nights', 'banner/valerian.jpg')
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Valerian Swing', 'Aurora', 'product/valerian-aurora.jpg')
+      
+      .column.is-6-mobile.is-3-tablet  
+        +card-info-overlay('Wild Cat Strike','Horses', 'banner/wild.jpg')
+    
+      
+    
+      
+    
+      
+      
+  
+        
+  hr        
+  include includes/rehearse-foot

@@ -1,0 +1,76 @@
+#rehearse-header
+  nav.navbar.is-fixed-top#rehearse-nav
+    .navbar-brand
+      a.navbar-item(href='index.php')
+        img(src='media/logo.png' width='112', height='28')
+      .navbar-burger.burger(data-target='navbarExampleTransparentExample')
+        span
+        span
+        span
+      
+    #navbarExampleTransparentExample.navbar-menu
+      .navbar-start
+      
+        a.navbar-item.with-icon.is-active(href='rehearse.php')
+          span.icon.is-large
+            img(src="media/icons/amp.png", alt="")
+          |  Rehearse
+    
+        a.navbar-item.with-icon(href='record.php')
+          span.icon.is-large
+            img(src="media/icons/reel.png", alt="")
+          |  Record
+        a.navbar-item.with-icon(href='master.php')
+          span.icon.is-large
+            img(src="media/icons/mixer.png", alt="")
+          |  Mastering
+          span.tag.tooltip
+            | New!
+        span.navbar-item.divider |
+        .navbar-item.has-dropdown.is-hoverable
+          a.navbar-link(href='#')
+            
+            |  More
+          .navbar-dropdown.is-boxed
+            a.navbar-item(href='about.php')
+              | About
+            a.navbar-item(href='contact.php')
+              | Contact
+            a.navbar-divider
+            a.navbar-item(href='label.php')
+              | Label  
+            a.navbar-item(href='label-live.php')
+              | Live
+          
+      
+      .navbar-end
+        .navbar-item
+          .field.is-grouped
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-instagram
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-twitter
+            p.control
+             a.button(target='_blank', href='https://www.facebook.com/smallpondrecordings/')
+               span.icon
+                 i.icon-facebook
+
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-youtube            
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-spotify
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-bandcamp         
+          
+          
+.navbar-spacer

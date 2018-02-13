@@ -1,0 +1,74 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Recording';  
+
+
+block prepend body
+  
+  include includes/rehearse-head
+  
+  .container.main-wrap  
+    .columns.is-multiline
+      .column.is-12
+        p.title.is-1.with-icon.page-title RECORDING
+      
+        .content
+          p.is-size-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          p.is-size-5 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+        hr
+      .column.is-4
+        .box
+        
+          p.is-size-5 Just 2 minutes walk from Churchill Square, our brand new state of the art recording facilities are now open!
+        a.button.is-fullwidth.attach-top(href="contact.php")
+          span.icon
+            i.icon-facebook
+          span ENQUIRE ABOUT RECORDING  
+        .box.txt-center
+          p.title.is-4 STUDIO OPENING TIMES
+          p 
+            strong Mon-Sat: 
+            | 10am - Midnight
+          p 
+            strong Sun: 
+            | 10am - 10pm
+          hr
+          p To enquire about booking or any other recording related activites, please
+            a(href="contact.php")  get in touch.
+      .column.is-8
+        .main-slide.box
+          +slide-info('NEVE 81 SERIES CONSOLE', '24 Channel desk from 1980', 'neve.jpg')
+          +slide-info('CONTROL ROOM', 'Acoustically designed for true representation', 'console.jpg')
+          +slide-info('OUTBOARD GEAR', 'We like our toys!', 'outboard.jpg') 
+          +slide-info('AMPS', 'We have a wide range of vintage and modern amps', 'amps.jpg') 
+          
+          
+        +title-accent('INFO', 'green')          
+        .content
+          ul 
+            li 
+              strong NEVE 8108 
+              |  2 CHANNEL MIXING CONSOLE
+            li 
+              strong API UNIVERSAL & NEVE
+              |  PRE-AMPS
+            li 
+              strong CLASSIC & VINTAGE AMPS
+              |  SUCH AS VOX AC30, FENDER TWIN, SUPRO, HIWAT ETC...
+            li 
+              strong UREI, JOE MEEK, NEVE
+              |  COMPRESSORS & LIMITERS
+            li 
+              strong GENLEC & YAMAHA
+              |  MONITORING
+            li 
+              strong CONTROL ROOM, LIVE ROOM & ISOLATED VOCAL BOOTH
+          a.button.is-fullwidth.is-hidden-mobile
+            span.icon
+              i.icon-facebook
+            span DOWNLOAD FULL STUDIO SPEC LIST HERE                  
+  hr    
+  
+  include includes/rehearse-foot

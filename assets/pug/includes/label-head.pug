@@ -1,0 +1,91 @@
+#rehearse-header
+  nav.navbar.is-fixed-top#rehearse-nav
+    .navbar-brand
+      a.navbar-item(href='/index.php')
+        img(src='/media/logo.png' width='112', height='28')
+      .navbar-burger.burger(data-target='navbarExampleTransparentExample')
+        span
+        span
+        span
+      
+    #navbarExampleTransparentExample.navbar-menu
+      .navbar-start
+      
+        
+        .navbar-item.has-dropdown.is-hoverable
+          a.navbar-link(href='/label.php')
+            span.icon.is-large
+              img(src="/media/icons/vin.png", alt="")
+            | Label
+          .navbar-dropdown.is-boxed
+            a.navbar-item(href='/label-catalog.php')
+              | Catalog
+            a.navbar-item(href='/label-bands.php')
+              | Bands 
+        .navbar-item.has-dropdown.is-hoverable
+          a.navbar-link(href='/label-live.php')
+            span.icon.is-large
+              img(src="/media/icons/event.png", alt="")
+            |  Live
+          .navbar-dropdown.is-boxed
+            a.navbar-item(href='/label-live.php')
+              | Upcoming
+            
+            a.navbar-item(href='/label-bands.php')
+              | Buy tickets
+        a.navbar-item.with-icon.is-disabled(href='#')
+          span.icon.is-large
+            img(src="/media/icons/shop.png", alt="")
+          |  Shop
+          span.tag.tooltip.warning
+            span.icon
+              i.icon-info
+            span.text Under maintaince!
+      
+        
+        span.navbar-item.divider |
+        .navbar-item.has-dropdown.is-hoverable
+          a.navbar-link(href='#')
+            
+            |  More
+          .navbar-dropdown.is-boxed
+            a.navbar-item(href='/label-about.php')
+              | About
+            a.navbar-item(href='/label-contact.php')
+              | Contact
+            a.navbar-divider
+            a.navbar-item(href='/rehearse.php')
+              | Rehearse
+            a.navbar-item(href='/record.php')
+              | Record 
+          
+      
+      .navbar-end
+        .navbar-item
+          .field.is-grouped
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-instagram
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-twitter
+            p.control
+             a.button(target='_blank', href='https://www.facebook.com/smallpondrecordings/')
+               span.icon
+                 i.icon-facebook
+
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-youtube            
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-spotify
+            p.control
+             a.button(target='_blank', href='https://twitter.com/smallpondrec')
+               span.icon
+                 i.icon-bandcamp        
+.navbar-spacer

@@ -1,0 +1,74 @@
+extends layout.pug
+include partials/mixins.pug
+
+
+block prepend body
+  
+  .container#landing-header
+    img(src="media/logo_line.png")
+    ul.social-right
+      li
+        a.social-link(href="#")
+          span.icon
+            i.icon-facebook
+      li
+        a.social-link(href="#")
+          span.icon
+            i.icon-twitter
+      li
+        a.social-link(href="#")
+          span.icon
+            i.icon-instagram
+      li
+        a.social-link(href="#")
+          span.icon
+            i.icon-soundcloud
+      li
+        a.social-link(href="#")
+          span.icon
+            i.icon-spotify
+              
+    hr
+    
+  .container
+    #slogan-text
+      p.title.is-5 Welcome To Small Pond
+      p.subtitle.is-6 How can we help you?   
+  
+    .columns.is-mobile.is-multiline
+      .column.is-12-mobile.is-5-desktop.is-4-tablet.is-offset-1-desktop.is-offset-2-tablet
+        .landing-card-wrap
+          
+            .card.landing-card#rehearse-landing-card
+              .card-content.green
+                .media
+                  .media-left
+                    figure.image.is-64x64
+                      img(src='media/icons/synth.png', alt='Placeholder image')
+                  .media-content
+                    a.title.landing-card-title(href="home.php") Rehearse / Record / Master
+      .column.is-5-desktop.is-4-tablet
+        .landing-card-wrap
+          .card.landing-card#label-landing-card
+            .card-content.orange 
+              .media
+                .media-left
+                  figure.image.is-64x64
+                    img(src='media/icons/vin.png', alt='Placeholder image')
+          
+                .media-content
+                  a.title.landing-card-title(href="label.php  ") Label / Live / Shop
+      
+  
+  footer#landing-footer
+    .container
+      hr.medium        
+      p 
+        span.icon
+          i.icon-mobile
+        | 01273 123 4567
+        br
+        span.icon
+          i.icon-mail
+        strong  info
+        | @smallpondrec.co.uk

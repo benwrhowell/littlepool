@@ -1,0 +1,64 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Rehearse';  
+
+
+block prepend body
+  
+  include includes/rehearse-head
+       
+  
+  .container.main-wrap.has-newsfeed  
+    .columns.is-multiline
+      
+      .column.is-12
+        .main-slide.box
+          +slide('REHEARSAL SPACES', 'Get in touch and book a room today!', 'green.jpg', 'rehearse.php')
+          +slide('AMPS', 'We have a wide range of vintage and modern amps', 'green-yello.jpg', 'rehearse.php') 
+           
+      .column.is-12.is-hidden-mobile  
+        hr              
+      .column    
+        .box.txt-center
+          p.title.is-3 
+            span.icon
+              i.icon-clock
+            span  OPENING HOURS
+          
+          p 
+            strong Mon-Sat: 
+            | 10am - Midnight
+          p 
+            strong Sun: 
+            | 10am - 10pm
+        a.button.is-success.is-fullwidth.is-large(href="contact.php")
+          span.icon
+            i.icon-location 
+          span Find Us
+      .column
+        .box.txt-center
+          p.title.is-4 To enquire about booking studio/rehearsal time, or any other recording related activities please get in touch.
+        
+          p 
+            span.icon
+              i.icon-phone
+            |  01273 748193
+          p 
+            span.icon
+              i.icon-mail
+            strong  info
+            | @smallpondrec.co.uk
+      .column.is-12
+        hr    
+  
+    .social-grid#instafeed
+    a.button#load-more Load more...  
+    
+      
+      
+  
+        
+  hr        
+  include includes/rehearse-foot

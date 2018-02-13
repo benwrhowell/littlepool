@@ -1,0 +1,108 @@
+{
+  "name": "Mission-Labels",
+  "version": "1.0.0",
+  "description": "Mission Labels",
+  "main": "gulpfile.babel.js",
+  "author": "Ben Howell",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.18.13",
+    "chalk": "^2.1.0",
+    "critical": "^0.9.1",
+    "criticalcss": "^2.1.0",
+    "fancy-log": "^1.3.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-bootlint": "^0.8.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-jshint-notify-reporter": "^1.0.2",
+    "gulp-less": "^3.3.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.8",
+    "hamburgers": "^0.9.1",
+    "jshint-stylish": "^2.2.1",
+    "live-server": "^1.2.0",
+    "merge-stream": "^1.0.1",
+    "os": "^0.1.1",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "sc5-styleguide": "^2.0.1"
+  },
+  "dependencies": {
+    "jshint": "^2.9.5",
+    "less": "^2.7.2"
+  },
+  "global": {
+    "base": "./build/",
+    "projectName": "Mission Labels",
+    "URL": "http://bpress.dopewizard.com",
+    "host": "bpress.dopewizard.com"
+  },
+  "styles": {
+    "scssSRC": "./assets/scss/*.sass",
+    "scssName": "style.sass",
+    "lessSRC": "./assets/less/*.less",
+    "cssDest": "./dev/styles/",
+    "cssMinDest": "./build/styles/",
+    "cssName": "style.css",
+    "cssFile": "./build/css/style.css",
+    "scssFile": "./assets/scss/style.scss",
+    "stylegSRC": "./assets/scss/**/*.scss",
+    "stylegDest": "./assets/styleguide",
+    "ccssDest": "./css/critical/"
+  },
+  "scripts": {
+    "customJsSRC": "./assets/js/*.js",
+    "customJsDest": "./dev/js/",
+    "customJsMinDest": "./build/js/",
+    "customJsName": "custom",
+    "vendorJsSRC": "./assets/js/vendor/*.js",
+    "vendorJsDest": "./dev/js/",
+    "vendorMinJsDest": "./build/js/",
+    "vendorJsName": "vendor"
+  },
+  "pug": {
+    "pugSRC": "./assets/pug/**/*.pug",
+    "pugDest": "./dev/templates"
+  },
+  "watch": {
+    "scss": "./assets/scss/**/*.sass",
+    "js": "./assets/js/*.js",
+    "php": "./**/*.php",
+    "pug": "./assets/pug/**/**/*.pug"
+  },
+  "critical": [
+    {
+      "url": "",
+      "template": "index"
+    },
+    {
+      "url": "/about.php",
+      "template": "about"
+    },
+    {
+      "url": "/contact.php",
+      "template": "contact"
+    }
+  ],
+  "globs": {
+    "css": "**/*.css"
+  }
+}

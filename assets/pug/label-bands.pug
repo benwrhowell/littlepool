@@ -1,0 +1,81 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Bands';  
+
+
+block prepend body
+  
+  include includes/label-head
+       
+  
+  .container.main-wrap  
+    .columns.is-multiline
+      .column.is-12
+        +breadcrumbs(['Small Pond', 'Label'], 'Bands')
+      .column
+        .banner-simple(style="background-image: url('/media/product/natalie.jpg');")
+          .banner-content
+            
+            p.title.is-1 Natalie Evans
+            p.subtitle.is-3 In Trees
+            a.button.is-success 
+              span.icon
+                i.icon-spotify
+              span Stream
+            
+            a.button.is-danger
+              span.icon
+                i.icon-youtube-alt
+              span Watch
+      .column.is-12
+        .content
+          .buttons
+            
+            a.button(href="/label-bands.php") CATALOG
+            a.button(href="#") SHOP
+            a.button(href="/label-live.php") UPCOMING EVENTS
+    .columns.is-multiline.is-mobile    
+      .column.is-12
+        
+        
+        
+        +title-accent('BANDS', 'green')
+        
+      
+      
+  
+    
+      
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Alarmist','product/alarmist.jpg', 'bands/band.php')
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Calico','product/calico.jpg', 'bands/band.php')
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('InTechnicolor','product/intechnicolor.jpg', 'bands/band.php')  
+     
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Inwards','product/inwards.jpg', 'bands/band.php')  
+      
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Luo','product/luo.jpg', 'bands/band.php')
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Mutiny on the Bounty', 'product/mutiny.jpg', 'bands/band.php')
+        
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Natalie Evans','product/natalie.jpg', 'bands/band.php')  
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Town Portal','product/town.jpg', 'bands/band.php')
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('The Physics House Band','product/physics.jpg', 'bands/band.php')
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Wild Cat Strike', 'banner/wild.jpg', 'bands/band.php')
+      
+      
+    
+      .column.is-6-mobile.is-2-tablet
+        +card-info-meta('Valerian Swing', 'banner/valerian.jpg', 'bands/band.php')
+      
+  hr        
+  include includes/rehearse-foot

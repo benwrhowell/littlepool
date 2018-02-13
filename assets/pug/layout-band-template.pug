@@ -1,0 +1,65 @@
+include partials/mixins.pug
+include includes/meta.pug
+
+body
+      
+  include includes/label-head
+       
+
+  
+  
+  block band
+  
+    
+    .container.main-wrap  
+      .columns.is-multiline
+          
+            
+        .column.is-12
+          +title-accent(bandName, 'green')
+          .buttons
+            a.button(href= spotifyLink)
+              span.icon
+                i.icon-spotify
+              span Listen on Spotify
+            a.button
+              span.icon
+                i.icon-music
+              span Bandcamp
+        .column.is-narrow
+          iframe(width='100%', height='100%', src='https://www.youtube.com/embed/' + youtube, frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+
+        .column
+          .content
+            p= bio  
+      .columns.is-multiline  
+        .column.is-6
+          .content
+            p.title Releases
+            hr
+          .columns  
+            .column
+              +card-info-meta('Album Title','product/physics.jpg')
+            .column
+              +card-info-meta('Album Title', 'banner/wild.jpg')
+        .column.is-6
+          .content
+            p.title Events
+            hr
+          .columns.is-multiline
+            .column.is-6
+              +card-event-text('EVENT TITLE', '31/6/17 - Brighton', '$8.00')
+            .column.is-6
+              +card-event-text('EVENT TITLE', '31/6/17 - Brighton', '$8.00')
+            .column.is-6
+              +card-event-text('EVENT TITLE', '31/6/17 - Brighton', '$8.00')
+            
+      
+  
+        
+  hr        
+  include includes/rehearse-foot    
+      
+    
+      
+  include includes/footer.pug

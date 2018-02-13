@@ -1,0 +1,750 @@
+@charset "utf-8"
+
+//Base styles
+@import "utilities/_all"
+@import "base/_all"
+@import "elements/_all"
+@import "components/_all"
+@import "grid/_all"
+@import "layout/_all"
+@import "vendor/_config"
+
+@import "vendor/fonts"
+
+$linkedin: #0077b5
+$twitter: #00aced
+
+.page-title
+  font-size: 3.5rem
+
+  text-shadow:  3px 3px 0 #d6d6d6
+
+.button + .box
+  margin-top: 1.5rem
+.attach-top
+  margin-top: -1.5rem
+  border-top: none
+.round, .round img
+  border-radius: 50%
+.title
+  font-family: $family-alt
+  font-weight: bold
+  &.with-icon .icon
+    margin-right: 0.5rem
+  &.accent
+    font-weight: bold
+    &.purple
+      border-bottom: 3px solid $primary-purple
+    &.green
+      border-bottom: 3px solid $primary-green
+    &.orange
+      border-bottom: 3px solid $primary-orange
+  &.with-icon-alt .icon
+    vertical-align: text-top
+    margin-right: 1rem
+hr.medium
+  max-width: 500px
+  margin-left: auto
+  margin-right: auto
+.slick-next
+  top: 0.75rem
+  right: -1rem
+.slick-prev
+
+  top: 0.75rem
+  left: -0.75rem
+.slick-next, .slick-prev
+  z-index: 1
+  width: 50px
+  height: 50px
+  &::before
+    border: 1px solid $grey
+    padding: 0.5rem 0.75rem
+    /* z-index: 9 */
+    background: white
+    opacity: 0.99
+.container.module
+  padding: 1.5rem 0
+  &.post
+    .feat-image
+      margin: 0
+      margin-bottom: 1.5rem
+      img
+        object-fit: cover
+#landing-header
+  text-align: center
+  img
+    width: 200px
+    padding-top: 1rem
+  .social-right
+    text-align: right
+    margin-bottom: -1rem
+    margin-left: 1.5rem
+    margin-right: 1.5rem
+    color: $grey-light
+    li
+      display: inline-block
+      margin-left: 0.5rem
+      .social-link
+        color: $grey-light
+        &:hover
+          color: $grey
+      .icon
+        width: 1rem
+        height: 1rem
+        font-size: 1rem
+#landing-footer
+  text-align: center
+  margin-bottom: 1.5rem
+#slogan-text
+  text-align: center
+  margin-bottom: 1.5rem
+#rehearse-landing-card
+  background-image: url('/media/landing_studio.jpg')
+#label-landing-card
+  background-image: url('/media/landing_records.jpg')
+#rehearse-header
+#rehearse-footer
+  strong
+    color: $grey
+  color: $grey
+  padding-bottom: 1.5rem
+  .meta-text
+    font-size: 0.8rem
+    color: $grey-light
+
+@media (max-width: 1024px)
+  #rehearse-footer
+    padding-left: 1.5rem
+    padding-right: 1.5rem
+
+nav#rehearse-nav
+  transition: all 0.1s ease
+  box-shadow: 0 3px 8px rgba(10, 10, 10, 0.1)
+
+  .navbar-link, .navbar-item
+    .icon
+      margin-right: 1rem
+      vertical-align: middle
+    &.is-active
+      color: black
+      font-weight: bold
+      text-decoration: underline
+    &:hover
+      color: $black
+      text-decoration: underline
+      .tag.tooltip
+        opacity: 1
+        transition: opacity 0.2s ease-in
+    &.is-disabled
+
+      &:hover
+        background: white
+        color: $grey-light
+        text-decoration: none
+        cursor: default
+    .tag.tooltip
+      opacity: 0
+      transition: opacity 0.2s ease-out
+      height: 1.25rem
+      padding: 0.25rem
+      background-color: $primary-pink
+      color: white
+      font-size: 0.65rem
+      margin-left: 0.25rem
+      position: absolute
+      top: 7px
+      left: 2.5rem
+      &.warning
+        background: $warning
+        color: $grey
+        padding-right: 0.5rem
+      .icon
+        margin-right: 0
+
+
+  .navbar-brand
+    padding: 0.25rem
+    border-right: 1px solid $grey-lighter
+    .navbar-item img
+      max-height: 3.25rem
+      width: auto
+  .navbar-end
+    .button
+      color: $grey-light
+      border: none
+      box-shadow: none
+      padding-left: 0
+      padding-right: 0
+      &:hover i
+        color: $grey
+  .navbar-dropdown
+    border: 1px solid $grey
+  .navbar-item
+    transition: all 0.1s ease
+  &.scrolled
+    height: 40px
+    transition: all 0.2s ease
+    border-bottom: 1px solid $grey-light
+
+    .navbar-item img
+      max-height: 2.2rem
+      transition: all 0.1s ease
+@media (max-width: 1024px)
+  nav#rehearse-nav
+
+    border: none
+    box-shadow: none
+    .navbar-brand
+      border-bottom: 2px solid $grey-light
+      background: white
+      .navbar-item img
+        max-width: auto
+        height: 2.5rem
+        width: auto
+    .navbar-menu-text
+      position: absolute
+      bottom: 0px
+      font-size: 0.65rem
+      margin: auto
+      left: 13px
+      color: #606060
+    .navbar-item img
+      max-height: 2.25rem
+    .navbar-menu.is-active
+      padding: 0
+    .navbar-item.divider
+      display: none
+    .navbar-item.with-icon
+      border-bottom: 1px solid $grey-light
+    .navbar-item , .navbar-link
+      .icon
+        vertical-align: middle
+        margin-right: 0.5rem
+    .navbar-dropdown
+      background: #f7f7f7
+      border: none
+      border-top: 1px solid $grey-light
+      border-bottom: 1px solid $grey-light
+    .navbar-item.has-dropdown
+      .navbar-link
+        padding-left: 2.5rem
+      .navbar-link::after
+        border: 1px solid #00aeef
+        border-right: 0
+        border-top: 0
+        content: " "
+        display: block
+        height: 0.5em
+        pointer-events: none
+        position: absolute
+        -webkit-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+        -webkit-transform-origin: center
+        transform-origin: center
+        width: 0.5em
+        margin-top: -0.375em
+        left: 1rem
+        top: 50%
+    .navbar-end
+      .field.is-grouped
+        justify-content: space-around
+
+.slogan
+  .title
+    font-weight: bold
+    display: inline-block
+    margin-bottom: 0
+    &.accent1
+      color: $primary-green
+    &.accent2
+      color: $primary-purple
+    &.accent3
+      color: $primary-orange
+    &.accent4
+      color: $primary-green
+.main-wrap
+  padding: 1.5rem 0
+.panel
+  box-shadow: 4px 4px 0 0 $grey-lighter
+  .panel-block
+    padding: 0.75em 1em
+    &.title, .title
+      font-weight: bold
+  hr
+    margin: 0.5rem 0
+.panel-block.no-flex
+  display: block
+
+@media only screen and (max-width: 1024px)
+  .main-wrap
+    padding: 1.5rem
+
+
+$font-size-b: 1.25rem
+$line-height-b: 1.2
+$lines-to-show-b: 3
+
+.box
+  &.social-headline
+    padding: 0
+    .image.is-128x128
+      height: 127px
+    img
+      border-right: 1px solid $grey-light
+    .level
+      font-size: 0.85rem
+    .media-content
+      padding: 0.5rem
+      padding-left: 0
+    .social-caption-headline
+      display: block
+      font-weight: bold
+      display: -webkit-box
+
+      margin: 0 auto
+      max-height: $font-size-b*$line-height-b*$lines-to-show-b
+      font-size: $font-size-b
+      line-height: $line-height-b
+      -webkit-line-clamp: $lines-to-show-b
+      -webkit-box-orient: vertical
+      overflow: hidden
+      text-overflow: ellipsis
+
+.main-slide.box
+  padding: 0
+  border: none
+  box-shadow: none
+  &.medium
+    .slide-box
+      height: 300px
+  &.flyer
+    .slide-box
+      height: 500px
+      border: 1px solid $grey-light
+      padding: 0
+      .title
+        margin-bottom: 1.5rem
+      .meta
+        color: white
+      &.img-only
+        height: auto
+        .slide-content .slide-content-wrap
+          position: initial
+          .button
+            margin: 0.5rem
+            position: absolute
+            bottom: 0
+
+      &:nth-child(even) .slide-content .slide-content-wrap
+        text-align: left
+        left: 0
+
+.slide-box
+  padding: 1.5rem
+  height: 450px
+  border: 1px solid #dedede
+  background-size: cover
+  background-position: center
+
+  &.alt
+    border: 1px solid #dedede
+    .slide-content .slide-content-wrap
+      .subtitle
+        background: black
+      .button.is-success
+        color: white
+  &:nth-child(even) .slide-content .slide-content-wrap
+    text-align: right
+    right: 0
+  .slide-content
+    position: relative
+    height: 100%
+    bottom: 0
+    .slide-content-wrap
+      position: absolute
+      bottom: 0
+      .title
+        font-size: 4.5em
+        font-weight: bold
+        color: white
+        text-shadow: 5px 5px 0 darken($black, 50%)
+
+      .button
+
+
+  .slide-content .slide-content-wrap .title.green
+    color: $primary-green
+    text-shadow: 5px 5px 0 darken($primary-green, 50%)
+  .slide-content .slide-content-wrap .title.orange
+    color: $primary-orange
+    text-shadow: 5px 5px 0 darken($primary-orange, 60%)
+  .subtitle
+    color: $white
+
+.card
+  &.landing-card
+
+    background-size: cover
+    padding: 0.5rem
+    padding-top: 170px
+    .card-content
+      background: rgba(255,255,255,0.85)
+      padding: 0.5rem
+      margin: -0.5rem
+      &.green
+        border-bottom: 5px solid $primary-green
+      &.orange
+        border-bottom: 5px solid $primary-orange
+      .media-left
+        margin-right: 0.5rem
+    .title.landing-card-title
+      font-size: 1.7rem
+      font-family: 'gt_pressuraregular'
+  &.compact-card
+    border: 1px solid $grey-light
+    box-shadow: $shadow-style
+    .card-image img
+      object-fit: cover
+      border-bottom: none
+    .card-content
+      border-top: 4px solid $grey-dark
+      padding: 0.5rem
+      .title
+        font-weight: bold
+        margin: 0
+
+        &.margin
+          margin-bottom: 1.5rem
+      .button
+        background: none
+        color: $grey-dark
+        box-shadow: none
+        height: 30px
+        padding: 0.25rem
+        border: none
+        margin: 0
+        &::after
+          content: " | "
+          padding-left: 0.5rem
+        &:last-of-type:after
+          content: none
+          padding: none
+    &.hoverable
+    &.overlay
+
+
+      .card-content
+        background: #ffffffd4
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        .title
+          display: block
+          margin-bottom: 0
+          font-size: 1rem
+        .subtitle
+          margin-bottom: 0
+          font-size: 0.8rem
+        .buttons.meta
+          .button
+            background: none
+            color: $grey-dark
+            box-shadow: none
+            height: 30px
+            padding: 0.25rem
+            border: none
+            margin: 0
+            &::after
+              content: " | "
+              padding-left: 0.5rem
+            &:last-of-type:after
+              content: none
+              padding: none
+    &.overlay.product
+      .card-content
+        .buttons.meta
+          .button.price
+            color: $success
+            font-size: 0.85rem
+            .icon
+              color: $grey-dark
+              font-size: 1rem
+    &.event
+      height: 100%
+      .button
+        position: absolute
+        bottom: 0.25rem
+      .title
+        margin-bottom: 1.75rem
+        text-decoration: underline
+      .subtitle + .subtitle
+        margin-bottom: 2rem
+
+      &.no-button
+        .subtitle + .subtitle
+          margin-bottom: 0
+  &.social
+    border: 1px solid $grey-light
+    box-shadow: $shadow-style
+    height: 100%
+    .card-image
+      height: 100%
+      border: 1px solid $grey-dark
+      border-bottom: 3px solid $grey-dark
+      .image
+        height: 100%
+      img
+        object-fit: cover
+        height: 100%
+
+    .card-content
+      padding: 0.75rem
+      font-size: 0.9rem
+      time
+        display: block
+        color: $grey-light
+        font-size: 0.8rem
+        padding-top: 0
+      hr
+        margin-top: 0.25rem
+        margin-bottom: 0.75rem
+      .read-more
+        font-size: 0.85rem
+        display: block
+
+.landing-card-wrap
+  padding: 0.25rem
+  border: 1px solid $grey
+  box-shadow: 4px 4px 0 0 $grey-light
+  transition: all 0.2s ease
+  &:hover
+    border: 1px solid $grey-dark
+    box-shadow: 4px 4px 0 0 $grey
+    cursor: pointer
+    transition: all 0.2s ease
+    .card-content
+      background: white
+      transition: all 0.2s ease
+    .title.landing-card-title
+      color: black
+
+.panel
+  .panel-icon
+    font-size: 64px
+    margin-right: 0.75rem
+  .panel-block.title
+    margin-bottom: 0
+
+$font-size: 0.8rem
+$line-height: 1.4
+$lines-to-show: 2
+
+.social-caption
+  display: block
+  display: -webkit-box
+  max-width: 400px
+  max-height: $font-size*$line-height*$lines-to-show
+  margin: 0 auto
+  font-size: $font-size
+  line-height: $line-height
+  -webkit-line-clamp: $lines-to-show
+  -webkit-box-orient: vertical
+  overflow: hidden
+  text-overflow: ellipsis
+  font-weight: bold
+
+
+
+
+
+.social-grid#instafeed
+  column-count: 4
+  column-gap: 1rem
+  break-inside: avoid
+  margin-bottom: 2.5rem
+  .item
+    width: 100%
+    padding-bottom: 1rem
+    display: inline-block
+    &.fix
+      display: block
+    .card
+      display: inline-block
+
+@media (max-width: 650px)
+  .social-grid#instafeed
+    column-count: 2
+    margin-bottom: 1.5rem
+@media (max-width: 450px)
+  .social-grid#instafeed
+    column-count: 1
+  .slide-box
+    padding: 1.5rem
+    height: 375px
+    .slide-content .slide-content-wrap .title
+      font-size: 2.5rem
+
+@media (min-width: 1024px)
+  .card.landing-card
+    padding-top: 220px
+    .title.landing-card-title
+      font-size: 2rem
+    .image.is-64x64
+      width: 75px
+      height: 75px
+
+@media (max-width: 768px)
+  #landing-header
+    .social-right
+      margin-left: 1.5rem
+      margin-right: 1.5rem
+@media (max-width: 600px)
+  .box.social-headline .social-caption-headline
+
+    font-size: 0.8rem
+
+@media (max-width: 468px)
+  #landing-header
+    img
+      width: 100px
+      padding-bottom: 1rem
+    .social-right
+      margin-left: 0.5rem
+      margin-right: 0.5rem
+      text-align: center
+  .card.landing-card
+    padding-top: 0.5rem
+  .landing-card-wrap
+    margin-left: 0.5rem
+    margin-right: 0.5rem
+
+.grid
+  max-width: 1200px
+  &.are-images-unloaded
+    opacity: 0
+.grid__item, .grid__col-sizer
+  width: 32%
+.grid__gutter-sizer
+  width: 2%
+.grid.are-images-unloaded .image-grid__item
+  opacity: 0
+.grid__item
+  margin-bottom: 20px
+  float: left
+.grid__item--height1
+  height: auto
+  background: #EA0
+.grid__item--height2
+  height: auto
+  background: #C25
+.grid__item--height3
+  height: auto
+  background: #19F
+.grid__item--width2
+  width: 66%
+.grid__item img
+  display: block
+  max-width: 100%
+.page-load-status
+  display: none
+  /* hidden by default
+  padding-top: 20px
+  border-top: 1px solid #DDD
+  text-align: center
+  color: #777
+
+.modal-close
+  top: 75px
+
+.banner-simple
+  background-image: url('../media/flyer/bad-pond.jpg')
+  background-size: cover
+  background-position: center
+
+  .banner-content
+    padding: 1.5rem
+
+    background: rgba(0,0,0,0.37)
+    .title
+      color: $white
+    .subtitle
+      color: $grey-lighter
+    .button
+      margin-right: 0.5rem
+      &:last-of-type
+        margin: 0
+.buttons.is-block
+  .button
+    display: block
+    width: 100%
+
+
+$c-breadcrumb-hover: $grey-darker
+$c-breadcrumb-current: $grey-dark
+
+.breadcrumbs
+  font-size: 0.8rem
+
+  .breadcrumb__item
+    display: inline-block
+    vertical-align: top
+
+    // breadcrumb icon
+    &:not(:last-child):after
+      content: '>'
+      margin-right: 4px
+      margin-left: 4px
+
+
+    &:not(:last-child):hover
+      color: $c-breadcrumb-hover
+
+
+
+  .breadcrumb__link
+    color: $grey
+    &:hover
+      color: $c-breadcrumb-hover
+
+
+
+  .breadcrumb__link-current
+    color: $c-breadcrumb-current
+    font-weight: bold
+    text-decoration: underline
+
+
+.breadcrumb__list
+  list-style-type: none
+  padding: 0
+  a
+    color: $grey
+    &:hover
+      color: $grey-darker
+  .current
+    font-weight: bold
+    text-decoration: underline
+
+.news-headline #instafeed, .has-newsfeed #instafeed
+  .post-item
+    .box, .card
+
+      opacity: 0
+      animation: fadein .5s ease-in 1 forwards
+
+@keyframes fadein
+  from
+    opacity: 0
+
+  to
+    opacity: 1
+span.cat_no
+    font-size: 0.7rem
+    padding-left: 0.25rem
+    font-weight: bold
+    color: grey
+
+.plyr
+  box-shadow: 4px 4px 0 0 #dbdbdb

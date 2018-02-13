@@ -1,0 +1,48 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Label';  
+  
+
+block prepend body
+  
+  include includes/label-head
+       
+  
+  .container.main-wrap.news-headline
+    .columns.is-multiline
+    
+      .column.is-12
+        .main-slide.box
+          +slide-alt('NATALIE EVANS', 'IN TREES - Out now', 'natalie.jpg', 'orange')
+          +slide-alt('INWARDS', 'AMSTERDAM / COMPUTERTALSK - Out now', 'inwards.jpg', 'orange')
+          +slide-alt('WILD CAT STRIKE', 'HORSES - Out now', 'wild.jpg', 'green')
+          
+      
+                
+      .column.is-12
+        .columns.is-multiline#instafeed
+        a.button#load-more Load more...
+      .column.is-12
+        hr    
+        .content
+          p.title Recent Releases
+      
+      .column.is-4
+        +card-info-overlay('Natalie Evans', 'In Trees', 'product/natalie.jpg')
+      .column.is-4
+        +card-info-overlay('Wild Cat Strike','Horses', 'banner/wild.jpg')
+      .column.is-4
+        +card-info-overlay('Inwards','Amsterdam / Computertalsk','product/inwards.jpg')
+      
+      .column.is-12
+        .content
+          a.button(href="label-catalog.php") SEE ALL  
+      
+      
+      
+  
+        
+  hr        
+  include includes/rehearse-foot

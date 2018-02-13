@@ -1,0 +1,99 @@
+extends layout.pug
+include partials/mixins.pug
+block prepend meta
+  
+  - var pageTitle = 'Mastering';  
+
+
+block prepend body
+  
+  include includes/rehearse-head
+       
+  
+  .container.main-wrap  
+  
+    .columns.is-multiline
+      
+      .column.is-12
+        p.title.is-1.page-title MASTERING
+      
+        .content
+          p.is-size-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          p.is-size-5 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+        hr
+      .column.is-8
+        .main-slide.box
+          +slide
+          +slide
+  
+      .column.is-4
+        
+        .content
+          ul 
+            li 
+              strong NEVE 8108 
+              |  2 CHANNEL MIXING CONSOLE
+            li 
+              strong API UNIVERSAL & NEVE
+              |  PRE-AMPS
+            li 
+              strong CLASSIC & VINTAGE AMPS
+              |  SUCH AS VOX AC30, FENDER TWIN, SUPRO, HIWAT ETC...
+            li 
+              strong UREI, JOE MEEK, NEVE
+              |  COMPRESSORS & LIMITERS
+            li 
+              strong GENLEC & YAMAHA
+              |  MONITORING
+            li 
+              strong CONTROL ROOM, LIVE ROOM & ISOLATED VOCAL BOOTH
+          a.button.is-fullwidth.is-hidden-mobile
+            span.icon
+              i.icon-facebook
+            span DOWNLOAD FULL SPEC
+      .column.is-12
+        hr
+      .column
+      
+        article.media
+          figure.media-left
+            p.image.round
+              img(src='media/team_liam_square.png')
+          .media-content
+            .content
+              p.title.is-5 Liam McMillian
+              p
+                
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.        
+      
+      .column.is-narrow
+        .box.full-height 
+          p.title.with-icon
+            span.icon
+              i.icon-sound
+            |  SHOWREEL
+          p Audio player here
+    hr
+    .columns
+      .column.is-narrow
+        .content
+          p.title.is-3.with-icon
+            span.icon
+              i.icon-money
+            |  PRICING
+          ul
+            li £45/track
+            li 4 or more tracks £40
+            li 10 or more tracks £35          
+      .column
+        .box
+          .content
+            p.title.is-5 GET IN TOUCH   
+            P Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            a.button ONLINE SUBMISSION    
+    
+                 
+  hr    
+  include includes/rehearse-foot
