@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 
-
+		<h1>hello world</h1>
     <div class="container" id="landing-header"><img src="media/logo_line.png">
         <ul class="social-right">
             <li><a class="social-link" href="#"><span class="icon"><i class="icon-facebook"></i></span></a></li>
