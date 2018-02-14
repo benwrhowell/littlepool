@@ -18,7 +18,7 @@ get_header(); ?>
 						<?php bulma_breadcrumbs(); ?>
 						<div class="column is-12">
 							<div class="content">
-								 <p class="title is-3"><?php the_title(); ?></p>
+								 <p class="title is-3"><?php the_title(); ?>sssss</p>
 								 <p class="subtitle is-7"><?php the_date(); ?></p>
 								 	<hr>
 							<figure class="image feat-image">
