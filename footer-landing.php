@@ -19,7 +19,7 @@
         <p> <span class="icon"><i class="icon-phone"></i></span>01273 123 4567<br><span class="icon"><i class="icon-mail"></i></span><strong> info</strong>@smallpondrec.co.uk</p>
     </div>
 </footer>
-<h1> hello world </h1>
+
 <?php wp_footer(); ?>
 
 </body>
