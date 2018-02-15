@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Bulmapress
+ * @package Littlpool
  */
 ?>
 
@@ -34,7 +34,7 @@
 	<div id="rehearse-header">
 			<nav id="rehearse-nav" class="navbar is-fixed-top" role="navigation">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="http://bpress.dopewizard.com/">
+					<a class="navbar-item" href="<?php echo get_home_url(); ?>">
 						<img src="/media/logo.png">
 					</a>
 
@@ -46,14 +46,9 @@
 
 					<div class="navbar-end">
 							<div class="navbar-item">
-									<div class="field is-grouped">
-											<p class="control"><a class="button" target="_blank" href="https://twitter.com/smallpondrec"><span class="icon"><i class="icon-instagram"></i></span></a></p>
-											<p class="control"><a class="button" target="_blank" href="https://twitter.com/smallpondrec"><span class="icon"><i class="icon-twitter"></i></span></a></p>
-											<p class="control"><a class="button" target="_blank" href="https://www.facebook.com/smallpondrecordings/"><span class="icon"><i class="icon-facebook"></i></span></a></p>
-											<p class="control"><a class="button" target="_blank" href="https://twitter.com/smallpondrec"><span class="icon"><i class="icon-youtube">           </i></span></a></p>
-											<p class="control"><a class="button" target="_blank" href="https://twitter.com/smallpondrec"><span class="icon"><i class="icon-spotify"></i></span></a></p>
-											<p class="control"><a class="button" target="_blank" href="https://twitter.com/smallpondrec"><span class="icon"><i class="icon-bandcamp">        </i></span></a></p>
-									</div>
+							
+											<?php social_navigation(); ?>
+
 							</div>
 					</div>
 				</div>

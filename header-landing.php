@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Bulmapress
+ * @package Littlpool
  */
 ?>
 
@@ -25,7 +25,7 @@
 
 <body <?php body_class(); ?>>
 
-		
+
     <div class="container" id="landing-header"><img src="media/logo_line.png">
         <ul class="social-right">
             <li><a class="social-link" href="#"><span class="icon"><i class="icon-facebook"></i></span></a></li>
