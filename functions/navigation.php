@@ -15,7 +15,7 @@ register_nav_menus( array(
 	) );
 
 register_nav_menus( array(
-	'menu-2' => esc_html__( 'Label/Shop', 'littlepool' ),
+	'menu-3' => esc_html__( 'Social', 'littlepool' ),
 	) );
 
 function main_navigation()
