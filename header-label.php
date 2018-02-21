@@ -42,16 +42,12 @@
 				</div>
 				<div class="navbar-menu" id="navbarExampleTransparentExample">
 
-					<?php shop_navigation(); ?>
-
-					<div class="navbar-end">
-							<div class="navbar-item">
-							
-											<?php social_navigation(); ?>
-
-							</div>
+				<?php shop_navigation(); ?>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<?php social_navigation(); ?>
 					</div>
-				</div>
+				<div>
 			</nav>
 
 

@@ -12,12 +12,12 @@ $posts = get_posts(array(
 if( $posts ): ?>
 
   <?php foreach( $posts as $post ): setup_postdata( $post ); ?>
-    
+
   <div class="column">
       <div class="banner-simple" style="background-image: url('<?php the_field('background_image'); ?>');">
           <div class="banner-content">
               <p class="title is-1"><?php the_field('main_title'); ?></p>
-              <p class="subtitle is-3"><?php the_field('subtitle'); ?></p>
+              <p title="hello" class="subtitle is-3"><?php the_field('subtitle'); ?></p>
               <?php
 
                 $spotifyLink = get_field('spotify_check');

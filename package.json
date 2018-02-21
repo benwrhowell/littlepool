@@ -52,8 +52,8 @@
   "global": {
     "base": "./build/",
     "projectName": "Mission Labels",
-    "URL": "http://bpress.dopewizard.com",
-    "host": "bpress.dopewizard.com"
+    "URL": "http://smallpress.dopewizard.com",
+    "host": "smallpress.dopewizard.com"
   },
   "styles": {
     "scssSRC": "./assets/scss/*.sass",

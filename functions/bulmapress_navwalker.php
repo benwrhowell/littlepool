@@ -33,6 +33,7 @@
       $is_current_item = '';
       $is_current_item_parent = '';
       $customClasses = $item->classes[0];
+      $title = $item->attr_title;
 
       if(array_search('current-menu-item', $item->classes) != 0)
       {
@@ -43,11 +44,6 @@
       {
           $is_current_item_parent = 'is-active';
       }
-
-
-
-
-
 
       // Checks description field for a value and returns markup etc.. if so
       if ( !empty($description)  ) {
@@ -60,7 +56,7 @@
       }
       // Carries on creating menu item
       else {
-          $output .= "<a class='".$customClasses." ".$liClasses." ".$is_current_item."' href='".$item->url."'> ".$icon."".$item->title;
+          $output .= "<a class='".$customClasses." ".$liClasses." ".$is_current_item."'title='".$title." ' href='".$item->url."'> ".$icon."".$item->title;
       }
       // Adds has_children class to the item so end_el can determine if the current element has children
       if ( $hasChildren ) {
@@ -112,11 +108,6 @@ class bulma_navwalker_social extends Walker_Nav_Menu {
     {
         $is_current_item_parent = 'is-active';
     }
-
-
-
-
-
 
     // Checks description field for a value and returns markup etc.. if so
     if ( !empty($description)  ) {

@@ -1,16 +1,40 @@
+
+
+
 jQuery(document).ready(function( $ ) {
 
- $('.main-slide').slick({
+  tippy('.navbar-item.is-disabled', {
+     placement: 'right',
+     arrow: true,
+     arrowType: 'round',
+  });
+
+  $('.main-slide').slick({
    arrows: true,
    fade: true
- });
+  });
 
 
-});
+    if ( $(window).width() < 1024) {
+        $('.navbar-item.has-dropdown').on('click',function (e) {
+         e.preventDefault();
+         $(this).children('.navbar-dropdown.is-boxed').toggleClass('is-active');
+         $(this).unbind('click').click(); // the html click submit work now !
+        });
+    }
+
+    $(window).resize(function(){
+      if ( $(window).width() < 1024) {
+          $('.navbar-item.has-dropdown').on('click',function (e) {
+           e.preventDefault();
+           $(this).children('.navbar-dropdown.is-boxed').toggleClass('is-active');
+           $(this).unbind('click').click(); // the html click submit work now !
+          });
+      }
+    });
 
 
 
-jQuery(document).ready(function( $ ) {
   // Find link of landing card for whole hover/click
   $('.landing-card-wrap').click(function(){
     var link = $(this).find('.landing-card-title').attr("href");
@@ -20,6 +44,11 @@ jQuery(document).ready(function( $ ) {
   });
 
 });
+
+
+
+
+
 jQuery(document).ready(function( $ ) {
 $(window).scroll(function() {
   if ($(document).scrollTop() > 108) {

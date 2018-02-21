@@ -22,7 +22,7 @@
 </footer>
 
 
-
+<script src="https://unpkg.com/tippy.js@2.2.3/dist/tippy.all.min.js"></script>
 
 <?php wp_footer(); ?>
 

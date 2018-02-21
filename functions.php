@@ -176,6 +176,20 @@ function create_posttype() {
             'rewrite' => array('slug' => 'slides'),
         )
     );
+		register_post_type( 'videos',
+		 // CPT Options
+				 array(
+						 'labels' => array(
+								 'name' => __( 'Videos' ),
+								 'singular_name' => __( 'Video' )
+
+						 ),
+						 'public' => true,
+						 'has_archive' => true,
+						 'rewrite' => array('slug' => 'videos'),
+
+				 )
+		 );
 		register_post_type( 'rooms',
     	// CPT Options
         array(
@@ -249,6 +263,7 @@ function sk_add_category_taxonomy_to_events() {
 	register_taxonomy_for_object_type( 'category', 'bands' );
 	register_taxonomy_for_object_type( 'category', 'slides' );
 	register_taxonomy_for_object_type( 'category', 'banners' );
+	register_taxonomy_for_object_type( 'category', 'videos' );
 }
 add_action( 'init', 'sk_add_category_taxonomy_to_events' );
 
@@ -264,7 +279,8 @@ function mvandemar_remove_post_type_support() {
 
     remove_post_type_support( 'rooms', 'editor' );
 		remove_post_type_support( 'slides', 'editor' );
-		remove_post_type_support( 'slides', 'editor' );
+		remove_post_type_support( 'banner', 'editor' );
+
 }
 add_action( 'init', 'mvandemar_remove_post_type_support' );
 
@@ -308,5 +324,27 @@ function hide_editor() {
     remove_post_type_support('page', 'editor');
   }
 }
+
+
+function wpd_subcategory_template( $template ) {
+    $cat = get_queried_object();
+    if( 0 < $cat->category_parent )
+        $template = locate_template( 'category-video-subcategory.php' );
+    return $template;
+}
+add_filter( 'category_template', 'wpd_subcategory_template' );
+
+
+
+function custom_post_type_cat_filter($query) {
+  if ( !is_admin() && $query->is_main_query() ) {
+    if ($query->is_category()) {
+      $query->set( 'post_type', array( 'post', 'videos' ) );
+
+    }
+  }
+}
+
+add_action('pre_get_posts','custom_post_type_cat_filter');
 
 ?>

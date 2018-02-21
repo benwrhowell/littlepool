@@ -118,6 +118,7 @@ hr.medium
     padding-left: 1.5rem
     padding-right: 1.5rem
 
+
 nav#rehearse-nav
   transition: all 0.1s ease
   box-shadow: 0 3px 8px rgba(10, 10, 10, 0.1)
@@ -191,10 +192,28 @@ nav#rehearse-nav
       max-height: 2.2rem
       transition: all 0.1s ease
 @media (max-width: 1024px)
+
   nav#rehearse-nav
 
     border: none
     box-shadow: none
+    .navbar-dropdown.is-boxed
+      opacity: 0
+      transform: scaleY(0)
+      transform-origin: top
+      transition: all .5s ease
+      height: 0px
+      position: absolute
+      width: 100%
+
+      &.is-active
+        opacity: 1
+        transition: all .5s ease
+        transform: scaleY(1)
+        height: auto
+        transform-origin: top
+        max-height: 500px
+        position: initial
     .navbar-brand
       border-bottom: 2px solid $grey-light
       background: white
@@ -211,6 +230,8 @@ nav#rehearse-nav
       color: #606060
     .navbar-item img
       max-height: 2.25rem
+    .navbar-start  .navbar-item
+      border-bottom: 1px solid $grey-light
     .navbar-menu.is-active
       padding: 0
     .navbar-item.divider
@@ -225,7 +246,9 @@ nav#rehearse-nav
       background: #f7f7f7
       border: none
       border-top: 1px solid $grey-light
-      border-bottom: 1px solid $grey-light
+
+      .navbar-item:last-of-type
+        border: none
     .navbar-item.has-dropdown
       .navbar-link
         padding-left: 2.5rem
@@ -752,3 +775,34 @@ span.cat_no
 .field.is-grouped#social
   ul
     display: flex
+
+
+.banner-video.box
+  padding: 0
+  .plyr__play-large
+    display: none
+
+.plyr--video .plyr__controls
+  opacity: 0
+
+
+.plyr
+  &:hover
+   .plyr__controls
+     opacity: 1
+  .plyr__play-large
+    display: none
+
+
+
+  opacity: 1
+  -webkit-transition: all .5s ease
+  transition: all .5s ease
+  height: auto
+  -webkit-transform: scaleY(1)
+  transform: scaleY(1)
+  height: auto
+  transform: scaleY(1)
+  -webkit-transform-origin: top
+  transform-origin: top
+  max-height: 500px
