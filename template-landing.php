@@ -13,7 +13,7 @@ Template Name: Landing page
 				<p class="subtitle is-6">How can we help you? </p>
 		</div>
 		<div class="columns is-mobile is-multiline">
-				<div class="column is-12-mobile is-5-desktop is-4-tablet is-offset-1-desktop is-offset-2-tablet">
+				<div class="column is-12-mobile is-4-desktop is-4-tablet is-offset-2-desktop is-offset-2-tablet">
 						<div class="landing-card-wrap">
 								<div class="card landing-card" id="rehearse-landing-card" style="background-image: url('<?php the_field('landing_option_1_image'); ?>'); )  ">
 										<div class="card-content green">
@@ -21,13 +21,15 @@ Template Name: Landing page
 														<div class="media-left">
 																<figure class="image is-64x64"><img src="/media/icons/synth.png" alt="Placeholder image"></figure>
 														</div>
-														<div class="media-content"><a class="title landing-card-title" href="<?php the_field('landing_option_1_link'); ?>"><?php the_field('landing_option_1'); ?></a></div>
+														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_1_link'); ?>"><?php the_field('landing_option_1'); ?></a>
+														<p class="subtitle is-6"> Rehearse, record, video, mastering + more</p>
+														</div>
 												</div>
 										</div>
 								</div>
 						</div>
 				</div>
-				<div class="column is-5-desktop is-4-tablet">
+				<div class="column is-12-mobile is-4-desktop is-4-tablet">
 						<div class="landing-card-wrap">
 								<div class="card landing-card" id="label-landing-card" tyle="background-image: url('<?php the_field('landing_option_2_image'); ?>'); )  ">
 										<div class="card-content orange">
@@ -35,7 +37,41 @@ Template Name: Landing page
 														<div class="media-left">
 																<figure class="image is-64x64"><img src="/media/icons/vin.png" alt="Placeholder image"></figure>
 														</div>
-														<div class="media-content"><a class="title landing-card-title" href="<?php the_field('landing_option_2_link'); ?>"><?php the_field('landing_option_2'); ?></a></div>
+														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_2_link'); ?>"><?php the_field('landing_option_2'); ?></a>
+														<p class="subtitle is-6"> Releases & bands</p>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="column is-12-mobile is-4-desktop is-4-tablet is-offset-2-desktop is-offset-2-tablet">
+						<div class="landing-card-wrap">
+								<div class="card landing-card" id="rehearse-landing-card" style="background-image: url('<?php the_field('landing_option_3_image'); ?>'); )  ">
+										<div class="card-content orange">
+												<div class="media">
+														<div class="media-left">
+																<figure class="image is-64x64"><img src="/media/icons/event.png" alt="Placeholder image"></figure>
+														</div>
+														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_3_link'); ?>"><?php the_field('landing_option_3'); ?></a>
+															<p class="subtitle is-6"> Gigs, events & tickets</p>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+				<div class="column is-12-mobile is-4-desktop is-4-tablet">
+						<div class="landing-card-wrap">
+								<div class="card landing-card" id="rehearse-landing-card" style="background-image: url('<?php the_field('landing_option_4_image'); ?>'); )  ">
+										<div class="card-content orange">
+												<div class="media">
+														<div class="media-left">
+																<figure class="image is-64x64"><img src="/media/icons/shop.png" alt="Placeholder image"></figure>
+														</div>
+														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_4_link'); ?>"><?php the_field('landing_option_4_text'); ?></a>
+															<p class="subtitle is-6"> Buy releases, tickets & merch</p>
+														</div>
 												</div>
 										</div>
 								</div>

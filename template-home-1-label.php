@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Home Template #1
+Template Name: Home Template #1 (label)
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('label'); ?>
 
 
   <div class="container main-wrap has-newsfeed">
@@ -19,6 +19,8 @@ Template Name: Home Template #1
 					</div>
 					<div class="column is-12 is-hidden-mobile">
 							<hr>
+              Starting as an idea amongst friends, Small Pond Recordings has grown into a fully fledged audio production team, recording studio, rehearsal studio complex, record label, and live events company. Get in touch if you want any more info or to book in for your rehearsal or project.
+
 					</div>
 					<div class="column">
 							<div class="box txt-center">

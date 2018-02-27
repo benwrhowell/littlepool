@@ -26,7 +26,7 @@ echo single_term_title();
     <div class="column is-4 video-post-thumb">
       <div class="video-card box">
 
-    <p class="title is-5"><a href="<?=$post->guid;?>"><?php the_title(); ?></a></p>
+    <p class="title is-5"><a href="<?=$post->guid;?>" ><?php the_title(); ?></a></p>
     <div data-type="youtube" data-plyr='{"volume": 0 }'  data-video-id="<?=the_field('youtube_url', $post);?>">
     </div>
       <span class="video-meta">

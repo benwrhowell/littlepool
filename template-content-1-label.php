@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Main Content #1
+Template Name: Main Content #1 (label)
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('label'); ?>
 
 
 <div class="container main-wrap">
@@ -18,7 +18,7 @@ Template Name: Main Content #1
             <p class="title is-1 page-title"><?php the_field('main_title');?></p>
             <div class="content">
                 <?php the_field('main_description');?>
-                <hr>
+                
             </div>
         </div>
         <div class="column">
@@ -38,7 +38,7 @@ Template Name: Main Content #1
             </div>
         </div>
         <div class="column is-12">
-          
+
 
             <div class="columns is-multiline is-mobile">
 

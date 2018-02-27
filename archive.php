@@ -14,8 +14,8 @@ if ( have_posts() ) : ?>
   <div class="column is-12">
   <p class="title"> All
 <?php
-echo single_term_title();
-?>s
+echo the_archive_title();
+?>
 </p>
 </div>
 

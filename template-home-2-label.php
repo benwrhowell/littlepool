@@ -8,7 +8,7 @@ Template Name: Home template #2
 
 
 <div class="container main-wrap news-headline">
-    <div class="columns is-multiline">
+    <div class="columns is-multiline is-mobile">
         <div class="column is-12">
             <div class="main-slide box">
 

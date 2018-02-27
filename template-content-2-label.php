@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Main Content #2
+Template Name: Main Content #2 (label)
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('label'); ?>
 
 <div class="container main-wrap">
     <div class="columns is-multiline">
@@ -36,7 +36,7 @@ Template Name: Main Content #2
                 <?php include get_template_directory() . '/cpt-templates/slides.php'; ?>
 
             </div>
-            <p class="title accent green">INFO</p>
+
             <div class="content">
               <?php the_field('content_area_1'); ?>
             </div>

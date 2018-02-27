@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Contact template
+Template Name: Label - Contact template
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('label'); ?>
 
 
   <div class="container main-wrap">

@@ -347,4 +347,27 @@ function custom_post_type_cat_filter($query) {
 
 add_action('pre_get_posts','custom_post_type_cat_filter');
 
+function order_category_archives( $query ) {
+  if ( is_category() && $query->is_main_query() ){ // is_category() can specify a category, if necessary
+    $query->set( 'orderby', 'title' );
+    $query->set( 'order', 'ASC' );
+  }
+}
+
+add_action( 'pre_get_posts', 'order_category_archives' );
+
+
+/**
+ * Remove archive title prefixes.
+ *
+ * @param  string  $title  The archive title from get_the_archive_title();
+ * @return string          The cleaned title.
+ */
+function grd_custom_archive_title( $title ) {
+	// Remove any HTML, words, digits, and spaces before the title.
+	return preg_replace( '#^[\w\d\s]+:\s*#', '', strip_tags( $title ) );
+}
+add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
+
+
 ?>

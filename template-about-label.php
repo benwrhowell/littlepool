@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: About template
+Template Name: About template (label)
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('label'); ?>
 
 
   <div class="container main-wrap">
@@ -14,7 +14,7 @@ Template Name: About template
                 <?php
                 $str = get_the_title();
                 $str = strtoupper($str);
-                echo $str; 
+                echo $str;
                 ?>
               </p>
               <hr>
