@@ -9,7 +9,7 @@ Template Name: Landing page
 
 <div class="container">
 		<div id="slogan-text">
-				<p class="title is-5">Welcome To Small Pondsss</p>
+				<p class="title is-5">Welcome To Small Pond</p>
 				<p class="subtitle is-6">How can we help you? </p>
 		</div>
 		<div class="columns is-mobile is-multiline">
@@ -62,20 +62,27 @@ Template Name: Landing page
 						</div>
 				</div>
 				<div class="column is-12-mobile is-4-desktop is-4-tablet">
-						<div class="landing-card-wrap">
+
+						<div class="landing-card-wrap disabled" title="Under maintainaince!">
+
 								<div class="card landing-card" id="rehearse-landing-card" style="background-image: url('<?php the_field('landing_option_4_image'); ?>'); )  ">
 										<div class="card-content orange">
+
 												<div class="media">
 														<div class="media-left">
 																<figure class="image is-64x64"><img src="/media/icons/shop.png" alt="Placeholder image"></figure>
 														</div>
-														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_4_link'); ?>"><?php the_field('landing_option_4_text'); ?></a>
+
+														<div class="media-content"><a class="title landing-card-title is-block disabled" href="<?php the_field('landing_option_4_link'); ?>"><?php the_field('landing_option_4_text'); ?></a>
 															<p class="subtitle is-6"> Buy releases, tickets & merch</p>
 														</div>
 												</div>
+
 										</div>
 								</div>
+
 						</div>
+
 				</div>
 		</div>
 </div>

@@ -22,16 +22,78 @@ jQuery(document).ready(function( $ ) {
 
   });
 }
+  if ( $(window).width() > 1024) {
+  tippy('.landing-card-wrap.disabled', {
+     placement: 'top',
+     arrow: true,
+     arrowType: 'round',
+     theme: 'warning',
 
+  });
+} else {
+  tippy('.landing-card-wrap.disabled', {
+      theme: 'warning',
+     placement: 'top-start',
+     arrow: true,
+     arrowType: 'round',
+     size: 'small',
+
+
+  });
+}
+
+
+  });
+jQuery(window).resize(function($){
+
+    if ( $(window).width() > 1024) {
+    tippy('.navbar-item.is-disabled', {
+       placement: 'right',
+       arrow: true,
+       arrowType: 'round',
+       theme: 'warning',
+    });
+  } else {
+    tippy('.navbar-item.is-disabled', {
+        theme: 'warning',
+       placement: 'left',
+       arrow: true,
+       arrowType: 'round',
+       size: 'small',
+       offset: '0, -200'
+
+    });
+  }
+    if ( $(window).width() > 1024) {
+    tippy('.landing-card-wrap.disabled', {
+       placement: 'bottom',
+       arrow: true,
+       arrowType: 'round',
+       theme: 'warning',
+
+    });
+  } else {
+    tippy('.landing-card-wrap.disabled', {
+        theme: 'warning',
+       placement: 'top-start',
+       arrow: true,
+       arrowType: 'round',
+       size: 'small',
+
+
+    });
+  }
+  
+});
+
+
+
+jQuery(document).ready(function( $ ) {
 
   $('.main-slide').slick({
    arrows: true,
    fade: true
   });
-
-
-
-
 
   // Find link of landing card for whole hover/click
   $('.landing-card-wrap').click(function(){
