@@ -832,7 +832,7 @@ span.cat_no
 
 
 
-.tippy-tooltip.warning-theme, .tippy-popper[x-placement^=right] .tippy-roundarrow path, .tippy-popper[x-placement^=top] .tippy-roundarrow path, 
+.tippy-tooltip.warning-theme, .tippy-popper[x-placement^=right] .tippy-roundarrow path, .tippy-popper[x-placement^=top] .tippy-roundarrow path,
   background: #FFEB3B
   fill: #FFEB3B
   color: black
@@ -849,3 +849,25 @@ span.cat_no
     font-size: 0.9rem
   .see-all-action
     margin-top: 0.5rem
+
+.paginate-links
+  text-align: center
+  a.page-numbers
+    color: $grey
+    padding: 0 1rem
+    &:hover
+      color: $black
+      
+
+  .page-numbers.current
+    background: $grey-light
+    /* padding: 0.5rem; */
+    border-radius: 50%
+    width: 1.75rem
+    height: 1.75rem
+    display: inline-block
+
+    line-height: 1.75
+    color: white
+    &:hover
+      color: white
