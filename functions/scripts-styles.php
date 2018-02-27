@@ -23,8 +23,8 @@ add_action('init', 'modify_jquery_version');
 function bulmapress_scripts() {
 	wp_enqueue_style( 'bulmapress-style', get_stylesheet_uri() );
 	wp_enqueue_script('jquery');
-	wp_enqueue_script( 'bulmapress-vendor', get_template_directory_uri() . '/build/js/vendor.min.js', true);
-	wp_enqueue_script( 'bulmapress-custom', get_template_directory_uri() . '/build/js/custom.min.js', true);
+	wp_enqueue_script( 'bulmapress-vendor', get_template_directory_uri() . '/build/js/vendor.min.js?v=1', true);
+	wp_enqueue_script( 'bulmapress-custom', get_template_directory_uri() . '/build/js/custom.min.js?v=1', true);
 
 
 }

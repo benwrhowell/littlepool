@@ -111,8 +111,13 @@ jQuery(document).ready(function( $ ) {
 
 
 jQuery(document).ready(function( $ ) {
+
+
+
+
+
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 108) {
+  if ($(document).scrollTop() > 108 & $(window).width() > 1024) {
     $(".navbar").addClass("scrolled");
     $("#nav-spacer").addClass("scrolled");
     $(".solid-nav-spacer").addClass("scrolled");
@@ -122,6 +127,9 @@ $(window).scroll(function() {
     $(".solid-nav-spacer").removeClass("scrolled");
   }
 });
+
+
+
 });
 /*
 $(function(){
