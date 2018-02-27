@@ -15,14 +15,24 @@ if ( have_posts() ) : ?>
   <p class="title"> All
 <?php
 echo single_term_title();
-?>s
+
+?>
+
 </p>
+
+  <?php include get_template_directory() . '/includes/subcat-list.php'; ?>
+
 </div>
+
+
 
     <?php
 
+
     // The Loop
-    while ( have_posts() ) : the_post(); ?>
+    while ( have_posts() ) : the_post();
+    ?>
+
     <div class="column is-4 video-post-thumb">
       <div class="video-card box">
 

@@ -17,6 +17,7 @@ if ( have_posts() ) : ?>
 echo single_term_title();
 ?>
 </p>
+<?php include get_template_directory() . '/includes/subcat-list.php'; ?>
 </div>
     <?php
 
@@ -31,6 +32,7 @@ echo single_term_title();
       <span class="video-meta">
       <a target="_blank" class="is-size-7" href="<?=the_field('youtube_url', $post);?>"><span class="icon"><i class="icon-youtube"></i></span><span>Watch on Youtube</a></span>
   </div>
+
   </div>
 
     <?php endwhile; // End Loop
