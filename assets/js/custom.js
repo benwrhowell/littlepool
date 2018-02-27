@@ -83,7 +83,7 @@ jQuery(window).resize(function($){
 
     });
   }
-  
+
 });
 
 
@@ -92,7 +92,8 @@ jQuery(document).ready(function( $ ) {
 
   $('.main-slide').slick({
    arrows: true,
-   fade: true
+   fade: true,
+   autoplay: true
   });
 
   // Find link of landing card for whole hover/click

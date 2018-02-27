@@ -100,7 +100,7 @@
                           <figure class="image"><img src="<?php the_field('image'); ?>" alt="Placeholder image" /></figure>
                       </div>
                       <div class="card-content">
-                          <div class="content"><a class="title is-5" href="bands/band.php"><?php the_field('name'); ?></a>
+                          <div class="content"><p class="title is-5"><?php the_field('name'); ?></p>
                               <div class="buttons meta"><a class="button" href="<?php the_field('more_info_link'); ?>"><span class="icon"><i class="icon-info"> </i></span></a><a class="button" href="<?php the_field('spotify_link'); ?>"><span class="icon"><i class="icon-spotify"> </i></span></a></div>
                           </div>
                       </div>

@@ -27,7 +27,7 @@ Template Name: Home Template #1 (label)
 
                   <p class="title is-3"> <span class="icon"><i class="icon-clock"></i></span><span> <?php the_field('home_box_title_1');?></span></p>
 									<?php the_field('home_box_content_1');?>
-							</div><a class="button is-success is-fullwidth is-large" href="contact.php"><span class="icon"><i class="icon-location"> </i></span><span>Find Us</span></a></div>
+							</div><a class="button is-success is-fullwidth is-large" href="http://smallpond.dopewizard.com/contactus/"><span class="icon"><i class="icon-location"> </i></span><span>Find Us</span></a></div>
 					<div class="column">
 							<div class="box txt-center">
 									<?php the_field('content_area_2');?>
