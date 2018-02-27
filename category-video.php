@@ -19,7 +19,7 @@ echo single_term_title();
 ?>
 
 </p>
-
+<hr>
   <?php include get_template_directory() . '/includes/subcat-list.php'; ?>
 
 </div>

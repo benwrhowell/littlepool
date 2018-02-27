@@ -17,6 +17,8 @@ if ( have_posts() ) : ?>
 echo the_archive_title();
 ?>
 </p>
+
+
 </div>
 
     <?php

@@ -18,7 +18,7 @@ Template Name: Main Content #1
             <p class="title is-1 page-title"><?php the_field('main_title');?></p>
             <div class="content">
                 <?php the_field('main_description');?>
-            
+
             </div>
         </div>
         <div class="column">

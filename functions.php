@@ -370,4 +370,10 @@ function grd_custom_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'grd_custom_archive_title' );
 
 
+add_filter('wp_list_categories', 'cat_count_span');
+function cat_count_span($links) {
+  $links = str_replace('</a> (', '</a> <span class="post-count">', $links);
+  $links = str_replace(')', '</span>', $links);
+  return $links;
+}
 ?>
