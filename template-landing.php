@@ -9,7 +9,7 @@ Template Name: Landing page
 
 <div class="container">
 		<div id="slogan-text">
-				<p class="title is-5">Welcome To Small Pond</p>
+				<p class="title is-5">Welcome To Small Pondsss</p>
 				<p class="subtitle is-6">How can we help you? </p>
 		</div>
 		<div class="columns is-mobile is-multiline">
