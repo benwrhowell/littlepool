@@ -18,7 +18,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<title>Small Pond | <?php echo get_the_title();  ?></title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dev/styles/style.css?v=2" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/build/styles/style.min.css?v=2" />
 	<?php wp_head(); ?>
 </head>
 
