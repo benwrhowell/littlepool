@@ -22,7 +22,7 @@ Template Name: Landing page
 																<figure class="image is-64x64"><img src="/media/icons/synth.png" alt="Placeholder image"></figure>
 														</div>
 														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_1_link'); ?>"><?php the_field('landing_option_1'); ?></a>
-														<p class="subtitle is-6"> Rehearse, record, video, mastering + more</p>
+														<p class="subtitle is-6"><?php the_field('landing_option_1_subtitle'); ?></p>
 														</div>
 												</div>
 										</div>
@@ -38,7 +38,7 @@ Template Name: Landing page
 																<figure class="image is-64x64"><img src="/media/icons/vin.png" alt="Placeholder image"></figure>
 														</div>
 														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_2_link'); ?>"><?php the_field('landing_option_2'); ?></a>
-														<p class="subtitle is-6"> Releases & bands</p>
+														<p class="subtitle is-6"><?php the_field('landing_option_2_subtitle'); ?></p>
 														</div>
 												</div>
 										</div>
@@ -54,7 +54,7 @@ Template Name: Landing page
 																<figure class="image is-64x64"><img src="/media/icons/event.png" alt="Placeholder image"></figure>
 														</div>
 														<div class="media-content"><a class="title landing-card-title is-block" href="<?php the_field('landing_option_3_link'); ?>"><?php the_field('landing_option_3'); ?></a>
-															<p class="subtitle is-6"> Gigs, events & tickets</p>
+															<p class="subtitle is-6"><?php the_field('landing_option_3_subtitle'); ?></p>
 														</div>
 												</div>
 										</div>
@@ -74,7 +74,7 @@ Template Name: Landing page
 														</div>
 
 														<div class="media-content"><a class="title landing-card-title is-block disabled" href="<?php the_field('landing_option_4_link'); ?>"><?php the_field('landing_option_4_text'); ?></a>
-															<p class="subtitle is-6"> Buy releases, tickets & merch</p>
+															<p class="subtitle is-6"><?php the_field('landing_option_4_subtitle'); ?></p>
 														</div>
 												</div>
 
