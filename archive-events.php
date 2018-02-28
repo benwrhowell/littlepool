@@ -8,7 +8,7 @@
 if ( have_posts() ) : ?>
 
 <div class="container main-wrap">
-    <div class="columns is-multiline">
+    <div class="columns is-multiline is-mobile">
   <?php bulma_breadcrumbs(); ?>
 
   <div class="column is-12">
@@ -17,13 +17,14 @@ if ( have_posts() ) : ?>
 echo the_archive_title();
 ?>
 </p>
+
 </div>
 
     <?php
 
     // The Loop
     while ( have_posts() ) : the_post(); ?>
-    <div class="column is-4 is-6-mobile">
+    <div class="column is-3-desktop is-4-tablet is-6-mobile">
         <div class="card compact-card event">
             <div class="card-image">
                 <figure class="image"><img src="<?php the_field('event_image', $post); ?>" alt="Placeholder image" /></figure>
