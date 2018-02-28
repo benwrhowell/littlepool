@@ -30,7 +30,7 @@ echo the_archive_title();
             </div>
             <div class="card-content">
                 <div class="content">
-                    <p class="title is-5"><?php the_field('main_artist', $post); ?></p>
+                    <a href="<?=$post->guid;?>" class="title is-5"><?php the_field('main_artist', $post); ?></a>
                     <p class="subtitle is-7">+ <?php the_field('support_artist', $post); ?></p>
 
                     <p class="subtitle is-7"><strong><?php the_field('meta_info', $post); ?></strong></p>
@@ -39,7 +39,7 @@ echo the_archive_title();
             </div>
         </div>
     </div>
-    
+
 
     <?php endwhile; // End Loop
 

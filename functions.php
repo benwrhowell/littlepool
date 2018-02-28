@@ -273,7 +273,7 @@ function mvandemar_remove_post_type_support() {
 
 	  remove_post_type_support( 'bands', 'editor' );
 
-	  remove_post_type_support( 'events', 'editor' );
+	 
 
     remove_post_type_support( 'team', 'editor' );
 
