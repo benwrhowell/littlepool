@@ -1,8 +1,4 @@
 <?php
-/*
- * Template Name: Video post
- * Template Post Type: post
- */
 
 get_header('label'); ?>
 

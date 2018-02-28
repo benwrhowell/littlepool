@@ -1,8 +1,4 @@
 <?php
-/*
- * Template Name: Simple post (Rehearse/Record)
- * Template Post Type: post
- */
 
 get_header('label'); ?>
 

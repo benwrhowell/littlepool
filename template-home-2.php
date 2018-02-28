@@ -4,7 +4,7 @@ Template Name: Home template #2
 */
 ?>
 
-<?php get_header('label'); ?>
+<?php get_header(); ?>
 
 
 <div class="container main-wrap news-headline">

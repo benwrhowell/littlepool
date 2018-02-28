@@ -4,14 +4,11 @@ Template Name: Home video template
 */
 ?>
 
-<?php get_header('label'); ?>
+<?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="container main-wrap news-headline">
     <div class="columns is-multiline">
-
-
-
 
             <?php include get_template_directory() . '/cpt-templates/banner-module.php'; ?>
     </div>

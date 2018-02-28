@@ -2,11 +2,11 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until main container
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Littlepool
+ * @package Littlpool
  */
 ?>
 
@@ -25,6 +25,12 @@
 <body <?php body_class(); ?>>
 
 
+
+
+
+
+
+
 	<div id="rehearse-header">
 			<nav id="rehearse-nav" class="navbar is-fixed-top" role="navigation">
 				<div class="navbar-brand">
@@ -36,13 +42,12 @@
 				</div>
 				<div class="navbar-menu" id="navbarExampleTransparentExample">
 
-					<?php main_navigation(); ?>
-					<div class="navbar-end">
-						<div class="navbar-item">
-							<?php social_navigation(); ?>
-						</div>
-					<div>
-				</div>
+				<?php shop_navigation(); ?>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<?php social_navigation(); ?>
+					</div>
+				<div>
 			</nav>
 
 

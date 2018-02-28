@@ -4,7 +4,7 @@ Template Name: Catalog template main
 */
 ?>
 
-<?php get_header('label'); ?>
+<?php get_header(); ?>
 
   <div class="container main-wrap has-newsfeed-alt">
       <div class="columns is-multiline">
