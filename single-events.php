@@ -25,7 +25,9 @@ get_header('label'); ?>
 
 								 <p class="subtitle"><strong><?php the_field('meta_info', $post); ?></strong></p>
 								 	<hr>
+									<div class="buttons">
 									<?php
+
 									$ticketLink = get_field('ticket_link', $post);
 									$fbLink = get_field('fb_link', $post);
 									$streamLink = get_field('stream_link', $post);
@@ -37,13 +39,12 @@ get_header('label'); ?>
 			                echo '<a class="button is-small is-info" href="'.$fbLink.'" target="_blank"><span class="icon"><i class="icon-facebook"></i></span><span>FB event</span></a>';
 			              }
 										if ($streamLink != '') {
-			                echo '<a class="button is-small is-success" href="'.$ticketLink.'" target="_blank"><span class="icon"><i class="icon-spotify"></i></span><span>Stream</span></a>';
+			                echo '<a class="button is-small is-success" href="'.$streamLink.'" target="_blank"><span class="icon"><i class="icon-spotify"></i></span><span>Stream</span></a>';
 			              }
 
 
-
 										 ?>
-
+									 </div>
 								 <hr>
 								 <?php the_content(); ?>
 							<figure class="image feat-image">
