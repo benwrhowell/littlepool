@@ -30,7 +30,7 @@ Template Name: Main Content #1
         </div>
         <div class="column is-narrow">
             <div class="panel">
-                <div class="panel-block no-flex txt-center">
+                <div class="panel-block no-flex txt-center opening">
                     <div class="content">
                         <?php the_field('box_2_content');?>
                     </div>

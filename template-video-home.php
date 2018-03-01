@@ -13,14 +13,14 @@ Template Name: Home video template
             <?php include get_template_directory() . '/cpt-templates/banner-module.php'; ?>
     </div>
   <div class="columns is-multiline">
-        <div class="column is-8">
+        <div class="column is-7">
             <div class="banner-video box">
               <div data-type="youtube" data-plyr='{"volume": 1, "autoplay": true }' data-video-id="h-zvCGTbl90"></div>
 
             </div>
         </div>
 
-<div class="column is-4">
+<div class="column is-5">
     <div class="content">
       <?php the_content(); ?>
 
