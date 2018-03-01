@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Main Content #2
+Template Name: Main Content #3
 */
 ?>
 
