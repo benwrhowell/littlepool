@@ -8,20 +8,14 @@ Template Name: Main Content #2
 
 <div class="container main-wrap">
     <div class="columns is-multiline">
-        <div class="column is-8">
+        <div class="column is-12">
             <p class="title is-1 with-icon page-title"><?php the_field('main_title');?></p>
             <div class="content">
                 <p class="is-size-5"><?php the_field('main_description');?>
             </div>
-            <hr>
+      
         </div>
-        <div class="column is-4">
-            <div class="box">
-              <div class="content">
-                <?php the_field('box_1_content');?>
-                  </div>
-            </div>
-        </div>
+
 
         <div class="column is-12">
             <div class="main-slide box">
@@ -40,6 +34,11 @@ Template Name: Main Content #2
 
               </div>
             </div>
+              <div class="box">
+                <div class="content">
+                  <?php the_field('box_1_content');?>
+                    </div>
+              </div>
         </div>
         <div class="column is-8">
             <div class="content">
