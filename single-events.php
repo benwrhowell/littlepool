@@ -24,13 +24,25 @@ get_header('label'); ?>
 								 <p class="main subtitle is-4">+ <?php the_field('support_artist', $post); ?></p>
 
 								 <p class="subtitle"><strong><?php the_field('meta_info', $post); ?></strong></p>
-								 	<hr>
-									<div class="buttons">
+								 <?php
+
+								 if (has_category('past', $post->ID)) {
+								 	echo "<p>Sorry! This event has already passed!</p>";
+								 }
+
+								  ?>
 									<?php
 
-									$ticketLink = get_field('ticket_link', $post);
-									$fbLink = get_field('fb_link', $post);
-									$streamLink = get_field('stream_link', $post);
+									$enableLinks = get_field('event_links');
+
+									if ($enableLinks == 'yes') {
+
+										$ticketLink = get_field('ticket_link', $post);
+										$fbLink = get_field('fb_link', $post);
+										$streamLink = get_field('stream_link', $post);
+
+										echo "<hr>";
+										echo "<div class='buttons'>";
 
 									  if ($ticketLink != '') {
 			                echo '<a class="button is-small" href="'.$ticketLink.'" target="_blank"><span class="icon"><i class="icon-info"></i></span><span>Buy Tickets</span></a>';
@@ -41,11 +53,11 @@ get_header('label'); ?>
 										if ($streamLink != '') {
 			                echo '<a class="button is-small is-success" href="'.$streamLink.'" target="_blank"><span class="icon"><i class="icon-spotify"></i></span><span>Stream</span></a>';
 			              }
+										echo "</div>";
+										echo "<hr>";
+									} ?>
 
 
-										 ?>
-									 </div>
-								 <hr>
 								 <?php the_content(); ?>
 							<figure class="image feat-image">
 							<?php the_post_thumbnail( 'full' ); ?>
