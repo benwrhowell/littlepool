@@ -36,7 +36,10 @@ Template Name: Main Content #2
                 <?php include get_template_directory() . '/cpt-templates/slides.php'; ?>
 
             </div>
-            <p class="title accent green">INFO</p>
+
+
+        </div>
+        <div class="column is-12">
             <div class="content">
               <?php the_field('content_area_1'); ?>
             </div>
