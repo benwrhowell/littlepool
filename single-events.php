@@ -25,10 +25,25 @@ get_header('label'); ?>
 
 								 <p class="subtitle"><strong><?php the_field('meta_info', $post); ?></strong></p>
 								 	<hr>
-								 <a href="<?php the_field('ticket_link ', $post); ?>" class="button is-small"> <span class="icon"><i class="icon-info"></i></span><span>Buy tickets</span></a>
-								  <a href="<?php the_field('ticket_link ', $post); ?>" class="button is-small is-link"> <span class="icon"><i class="icon-facebook"></i></span><span>FB event</span></a>
+									<?php
+									$ticketLink = get_field('ticket_link', $post);
+									$fbLink = get_field('fb_link', $post);
+									$streamLink = get_field('stream_link', $post);
 
-									<a href="<?php the_field('ticket_link ', $post); ?>" class="button is-small is-success"> <span class="icon"><i class="icon-spotify"></i></span><span>Stream</span></a>
+									  if ($ticketLink != '') {
+			                echo '<a class="button is-small" href="'.$ticketLink.'" target="_blank"><span class="icon"><i class="icon-info"></i></span><span>Buy Tickets</span></a>';
+			              }
+										if ($fbLink != '') {
+			                echo '<a class="button is-small is-info" href="'.$fbLink.'" target="_blank"><span class="icon"><i class="icon-facebook"></i></span><span>FB event</span></a>';
+			              }
+										if ($streamLink != '') {
+			                echo '<a class="button is-small is-success" href="'.$ticketLink.'" target="_blank"><span class="icon"><i class="icon-spotify"></i></span><span>Stream</span></a>';
+			              }
+
+
+
+										 ?>
+
 								 <hr>
 								 <?php the_content(); ?>
 							<figure class="image feat-image">
