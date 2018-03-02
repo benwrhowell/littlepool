@@ -70,7 +70,10 @@
                   <div class="card-content">
                       <div class="content">
                           <a href="<?=$post->guid;?>" class="title is-5 is-block"><?php the_field('main_artist'); ?></a>
-                          <p class="subtitle is-7">+ <?php the_field('support_artist'); ?></p>
+                          <?php $supportArtist = get_field('support_artist');?>
+                          <?php if ($supportArtist != ''): ?>
+                              <p class="subtitle is-7 support">+ <?php the_field('support_artist'); ?></p>
+                          <?php endif; ?>
 
                           <p class="subtitle is-7"><strong><?php the_field('meta_info'); ?></strong></p>
                           <a href="<?php the_field('ticket_link '); ?>" class="button is-small"> <span class="icon"><i class="icon-info"></i></span><span>Buy tickets</span></a>

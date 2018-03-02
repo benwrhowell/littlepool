@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home template #2
+Template Name: Front Page #2
 */
 ?>
 
@@ -17,7 +17,9 @@ Template Name: Home template #2
             </div>
         </div>
         <div class="column is-12">
-            <div class="columns is-multiline" id="instafeed"></div><a class="button" id="load-more">Load more...</a></div>
+
+
+        <div class="columns is-multiline" id="instafeed"></div><a class="button" id="load-more">Load more...</a></div>
 
         <div class="column is-12">
             <hr>
@@ -28,9 +30,7 @@ Template Name: Home template #2
 
 
 
-        <div class="column is-12">
-            <div class="content"><a class="button" href="http://bpress.dopewizard.com/label/catalog/">SEE ALL</a></div>
-        </div>
+
     </div>
 </div>
 <script>
@@ -67,6 +67,8 @@ jQuery(document).ready(function( $ ) {
   });
 
 });
+
+
 
 
 

@@ -409,6 +409,8 @@ $lines-to-show-b: 3
     .slide-content .slide-content-wrap
       .subtitle
         background: black
+        padding: 0.5rem
+        margin-top: -0.5rem
       .button.is-success
         color: white
   &:nth-child(even) .slide-content .slide-content-wrap
@@ -539,7 +541,8 @@ $lines-to-show-b: 3
         text-decoration: underline
       .subtitle + .subtitle
         margin-bottom: 2rem
-
+      .subtitle
+        margin-bottom: 1.5rem
       &.no-button
         .subtitle + .subtitle
           margin-bottom: 0
@@ -908,3 +911,12 @@ span.post-count
 
 .panel-block.opening
   padding: 1.5rem
+
+.slide-wash
+  position: absolute
+  width: 100%
+  bottom: 0
+  background: rgba(0,0,0,0.35)
+  top: 0
+  left: 0
+  right: 0

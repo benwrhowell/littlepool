@@ -210,8 +210,8 @@ function create_posttype() {
 								'singular_name' => __( 'Band' )
 						),
 						'public' => true,
-						'has_archive' => true,
-						'rewrite' => array('slug' => 'bands'),
+						'has_archive' => false,
+						'rewrite' => array('slug' => 'label/bands'),
 				)
 		);
 		register_post_type( 'releases',
@@ -273,7 +273,7 @@ function mvandemar_remove_post_type_support() {
 
 	  remove_post_type_support( 'bands', 'editor' );
 
-	 
+
 
     remove_post_type_support( 'team', 'editor' );
 

@@ -19,9 +19,6 @@ echo the_archive_title();
 </p>
 
 
-
-
-
 </div>
 
 </div>
@@ -30,18 +27,14 @@ echo the_archive_title();
 
     // The Loop
     while ( have_posts() ) : the_post(); ?>
-    <div class="column is-3-desktop is-4-tablet is-6-mobile">
-        <div class="card compact-card event">
+    <div class="column is-6-mobile is-3-desktop is-4-tablet">
+        <div class="card compact-card">
             <div class="card-image">
-                <figure class="image"><img src="<?php the_field('event_image', $post); ?>" alt="Placeholder image" /></figure>
+                <figure class="image is-square"><img src="<?php the_field('image', $post); ?>" alt="Placeholder image" /></figure>
             </div>
             <div class="card-content">
-                <div class="content">
-                    <a href="<?=$post->guid;?>" class="title is-5 is-block"><?php the_field('main_artist', $post); ?></a>
-                    <p class="subtitle is-7">+ <?php the_field('support_artist', $post); ?></p>
-
-                    <p class="subtitle is-7"><strong><?php the_field('meta_info', $post); ?></strong></p>
-                    <a href="<?php the_field('ticket_link ', $post); ?>" class="button is-small"> <span class="icon"><i class="icon-info"></i></span><span>Buy tickets</span></a>
+                <div class="content"><p class="title is-5"><?php the_field('name', $post); ?></p>
+                    <div class="buttons meta"><a class="button" href="<?php the_field('more_info_link', $post); ?>"><span class="icon"><i class="icon-info"> </i></span></a><a class="button" href="<?php the_field('spotify_link', $post); ?>"><span class="icon"><i class="icon-spotify"> </i></span></a></div>
                 </div>
             </div>
         </div>

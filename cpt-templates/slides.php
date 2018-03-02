@@ -14,6 +14,7 @@ if( $posts ): ?>
   <?php foreach( $posts as $post ): setup_postdata( $post ); ?>
 
       <div class="slide-box alt" style="background-image: url('<?php the_field('background_image') ?>');">
+          <div class="slide-wash"></div>
           <div class="slide-cover-wrap"></div>
           <div class="slide-content">
               <div class="slide-content-wrap">

@@ -2,16 +2,16 @@
 
 $bannerType = get_field('banner_cat');
 
-$posts = get_posts(array(
+$postss = get_posts(array(
   'posts_per_page'	=> 1,
   'post_type'			=> 'banners',
   'category_name' => $bannerType,
   'orderby' => 'rand',
 ));
 
-if( $posts ): ?>
+if( $postss ): ?>
 
-  <?php foreach( $posts as $post ): setup_postdata( $post ); ?>
+  <?php foreach( $postss as $post ): setup_postdata( $post ); ?>
 
   <div class="column">
       <div class="banner-simple" style="background-image: url('<?php the_field('background_image'); ?>');">
