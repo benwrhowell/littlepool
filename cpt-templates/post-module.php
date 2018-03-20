@@ -34,7 +34,8 @@
                     <div class="content"><a class="title is-5"><?php the_field('artist')?></a><a class="subtitle is-6"><?php the_field('title')?>
                       <span class="cat_no"><?php the_field('cat_no')?></span>
                     </a>
-                        <div class="buttons meta"><a class="button"><span class="icon"><i class="icon-info"> </i></span></a><a class="button" href"<?php the_field('spotify_link')?>"><span class="icon"><i class="icon-spotify"></i></span></a></div>
+                        <div class="buttons meta">
+                          <a class="button" target="_blank" href="<?php the_field('more_info_link')?>"><span class="icon"><i class="icon-info"> </i></span></a><a target="_blank" class="button" href"<?php the_field('spotify_link')?>"><span class="icon"><i class="icon-spotify"></i></span></a></div>
                     </div>
                 </div>
             </div>
@@ -136,8 +137,8 @@
                     <div class="card-content">
                         <div class="content"><p class="title is-5"><?php the_field('name'); ?></p>
                             <div class="buttons meta">
-                              <a class="button" href="<?php the_field('more_info_link'); ?>"><span class="icon"><i class="icon-info"> </i></span></a>
-                              <a class="button" href="<?php the_field('spotify_link'); ?>"><span class="icon"><i class="icon-spotify"> </i></span></a>
+                              <a class="button" target="_blank" href="<?php the_field('more_info_link'); ?>"><span class="icon"><i class="icon-info"> </i></span></a>
+                              <a class="button" target="_blank" href="<?php the_field('spotify_link'); ?>"><span class="icon"><i class="icon-spotify"> </i></span></a>
 
                             </div>
                         </div>

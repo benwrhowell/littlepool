@@ -41,7 +41,7 @@
 
 
                     </a>
-                        <div class="buttons meta"><a class="button"><span class="icon"><i class="icon-info"> </i></span></a><a class="button" href"<?php the_field('spotify_link')?>"><span class="icon"><i class="icon-spotify"></i></span></a></div>
+                        <div class="buttons meta"><a class="button" target="_blank" href="<?php the_field('more_info_link')?>"><span class="icon"><i class="icon-info"> </i></span></a><a target="_blank" class="button" href"<?php the_field('spotify_link')?>"><span class="icon"><i class="icon-spotify"></i></span></a></div>
                     </div>
                 </div>
             </div>
